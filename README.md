@@ -1,36 +1,100 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# LensFlowPro Landing Page
+
+A modern, responsive landing page for LensFlowPro - a professional photo editing mobile application. Built with Next.js and Tailwind CSS, optimized for Vercel deployment.
+
+## Features
+
+- 🎨 Modern, responsive design with Tailwind CSS
+- ⚡ Built with Next.js 16 and React 19
+- 🌙 Dark mode support
+- 📱 Mobile-first responsive design
+- 🚀 Optimized for Vercel deployment
+- ♿ Accessibility-focused
+- 🎯 Hero section with compelling CTAs
+- 💰 Pricing section with multiple tiers
+- ⭐ Customer testimonials
+- 📊 Feature highlights
+- 🔄 Smooth animations and transitions
+
+## Tech Stack
+
+- **Framework**: Next.js 16 (App Router)
+- **Styling**: Tailwind CSS 4
+- **Icons**: Lucide React
+- **Language**: TypeScript
+- **Deployment**: Vercel (optimized)
 
 ## Getting Started
 
-First, run the development server:
-
+1. Install dependencies:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Run the development server:
+```bash
+npm run dev
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Deployment
 
-## Learn More
+This project is configured for Vercel deployment:
 
-To learn more about Next.js, take a look at the following resources:
+### Automatic Deployment
+1. Push your code to GitHub/GitLab/Bitbucket
+2. Connect your repository to Vercel
+3. Vercel will automatically build and deploy your site
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Manual Deployment
+1. Build the project:
+```bash
+npm run build
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+2. Deploy the `out` folder to any static hosting service
 
-## Deploy on Vercel
+## Project Structure
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```
+lensflowpro-landing/
+├── src/
+│   └── app/
+│       ├── page.tsx          # Main landing page
+│       ├── layout.tsx        # Root layout
+│       └── globals.css       # Global styles
+├── public/                   # Static assets
+├── next.config.js           # Next.js configuration
+├── tailwind.config.ts       # Tailwind configuration
+├── package.json             # Dependencies and scripts
+└── README.md               # This file
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Customization
+
+### Branding
+- Update the app name and logo in the navigation
+- Modify colors in Tailwind configuration
+- Update text content throughout the page
+
+### Styling
+- Colors are defined in Tailwind config
+- Component styles use Tailwind utility classes
+- Dark mode is fully supported
+
+### Content
+- All text content is in `src/app/page.tsx`
+- Features, pricing, and testimonials can be easily updated
+- Add new sections by following the existing patterns
+
+## Scripts
+
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run start` - Start production server
+- `npm run lint` - Run ESLint
+
+## License
+
+This project is licensed under the MIT License.
