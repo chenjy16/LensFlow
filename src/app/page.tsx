@@ -147,16 +147,20 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="text-center">
-              <h3 className="text-2xl font-semibold text-slate-900 dark:text-white mb-6">3. Presenter Overlay / Picture-in-picture narration</h3>
-              <div className="bg-white dark:bg-slate-900 p-8 rounded-xl max-w-2xl mx-auto">
-                <User className="h-12 w-12 text-blue-600 mx-auto mb-4" />
-                <p className="text-slate-600 dark:text-slate-300">
-                  On macOS 14, LensFlowPro supports Presenter Overlay so your camera feed appears naturally on screen without blocking key content. 
-                  Great for course recording, product demos, and presentation-style videos.
-                </p>
+<div className="text-center">
+            <h3 className="text-2xl font-semibold text-slate-900 dark:text-white mb-6">3. Presenter Overlay / Picture-in-picture narration</h3>
+            <div className="bg-white dark:bg-slate-900 p-8 rounded-xl max-w-2xl mx-auto">
+              <User className="h-12 w-12 text-blue-600 mx-auto mb-4" />
+              <p className="text-slate-600 dark:text-slate-300 mb-4">
+                On macOS 14+, LensFlowPro supports Apple's Presenter Overlay feature for professional narration. 
+                Your camera feed appears naturally on screen without blocking key content.
+              </p>
+              <div className="bg-blue-50 dark:bg-blue-900/20 p-4 rounded-lg text-sm text-slate-600 dark:text-slate-300">
+                <strong>System Requirements:</strong> macOS 14.0 or later for Presenter Overlay. 
+                Classic picture-in-picture mode available on earlier versions.
               </div>
             </div>
+          </div>
           </div>
         </div>
       </section>
@@ -219,111 +223,179 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Privacy Section */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-slate-50 dark:bg-slate-800">
-        <div className="max-w-4xl mx-auto text-center">
-          <Shield className="h-16 w-16 text-green-600 mx-auto mb-6" />
-          <h2 className="text-3xl font-bold text-slate-900 dark:text-white mb-6">
-            Privacy and
-            <span className="text-green-600 dark:text-green-400"> Local Storage</span>
-          </h2>
-          <p className="text-lg text-slate-600 dark:text-slate-300 mb-8 leading-relaxed">
-            From day one, LensFlowPro has been designed with strong attention to privacy and data security.
-          </p>
-          
-          <div className="grid md:grid-cols-2 gap-6 text-left">
-            <div className="bg-white dark:bg-slate-900 p-6 rounded-xl">
-              <Shield className="h-6 w-6 text-green-600 mb-3" />
-              <h4 className="font-semibold mb-2">Local Storage</h4>
-              <p className="text-slate-600 dark:text-slate-300 text-sm">
-                Recorded video and audio files are stored locally on your device by default
-              </p>
-            </div>
-            <div className="bg-white dark:bg-slate-900 p-6 rounded-xl">
-              <Shield className="h-6 w-6 text-green-600 mb-3" />
-              <h4 className="font-semibold mb-2">No Automatic Upload</h4>
-              <p className="text-slate-600 dark:text-slate-300 text-sm">
-                The app will not automatically upload your recordings to any server
-              </p>
-            </div>
-            <div className="bg-white dark:bg-slate-900 p-6 rounded-xl">
-              <Shield className="h-6 w-6 text-green-600 mb-3" />
-              <h4 className="font-semibold mb-2">Minimal Logging</h4>
-              <p className="text-slate-600 dark:text-slate-300 text-sm">
-                Only basic crash logs may be generated at the system level to help diagnose issues
-              </p>
-            </div>
-            <div className="bg-white dark:bg-slate-900 p-6 rounded-xl">
-              <Shield className="h-6 w-6 text-green-600 mb-3" />
-              <h4 className="font-semibold mb-2">Controlled Sharing</h4>
-              <p className="text-slate-600 dark:text-slate-300 text-sm">
-                Information is only used for troubleshooting and product improvement when you choose to share
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* System Requirements */}
-      <section id="requirements" className="py-20 px-4 sm:px-6 lg:px-8 bg-white dark:bg-slate-900">
-        <div className="max-w-4xl mx-auto text-center">
-          <Monitor className="h-16 w-16 text-blue-600 mx-auto mb-6" />
-          <h2 className="text-3xl font-bold text-slate-900 dark:text-white mb-6">
-            System
-            <span className="text-blue-600 dark:text-blue-400"> Requirements</span>
-          </h2>
-          
-          <div className="bg-slate-50 dark:bg-slate-800 p-8 rounded-2xl">
-            <div className="space-y-4 text-left max-w-md mx-auto">
-              <div className="flex items-center justify-between">
-                <span className="font-semibold text-slate-900 dark:text-white">Platform:</span>
-                <span className="text-slate-600 dark:text-slate-300">macOS</span>
-              </div>
-              <div className="flex items-center justify-between">
-                <span className="font-semibold text-slate-900 dark:text-white">Supported versions:</span>
-                <span className="text-slate-600 dark:text-slate-300">macOS 12.3 or later</span>
-              </div>
-            </div>
-            
-            <p className="mt-6 text-sm text-slate-600 dark:text-slate-300">
-              For the best experience, using the latest version of macOS is recommended.
+            {/* Data Protection */}
+      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white dark:bg-slate-900">
+        <div className="max-w-4xl mx-auto">
+          <div className="text-center mb-12">
+            <Shield className="h-16 w-16 text-green-600 mx-auto mb-6" />
+            <h2 className="text-3xl font-bold text-slate-900 dark:text-white mb-4">
+              Data Protection &amp; Security
+            </h2>
+            <p className="text-lg text-slate-600 dark:text-slate-300">
+              Built with privacy and security as core principles
             </p>
           </div>
+          
+          <div className="grid md:grid-cols-2 gap-8">
+            <div className="bg-green-50 dark:bg-green-900/20 p-6 rounded-2xl border border-green-200 dark:border-green-800">
+              <h3 className="text-xl font-semibold text-slate-900 dark:text-white mb-4 flex items-center">
+                <Shield className="h-6 w-6 text-green-600 mr-2" />
+                Local Processing
+              </h3>
+              <ul className="space-y-3 text-sm text-slate-600 dark:text-slate-300">
+                <li>• All video encoding happens on-device</li>
+                <li>• No cloud processing or external dependencies</li>
+                <li>• Files remain on your device until you choose to share</li>
+                <li>• No telemetry or usage tracking</li>
+              </ul>
+            </div>
+            
+            <div className="bg-blue-50 dark:bg-blue-900/20 p-6 rounded-2xl border border-blue-200 dark:border-blue-800">
+              <h3 className="text-xl font-semibold text-slate-900 dark:text-white mb-4 flex items-center">
+                <Settings className="h-6 w-6 text-blue-600 mr-2" />
+                System Integration
+              </h3>
+              <ul className="space-y-3 text-sm text-slate-600 dark:text-slate-300">
+                <li>• Uses Apple's native screen recording APIs</li>
+                <li>• Complies with macOS security permissions</li>
+                <li>• Respects user privacy settings and controls</li>
+                <li>• Follows App Store sandboxing requirements</li>
+              </ul>
+            </div>
+          </div>
         </div>
       </section>
 
-      {/* Technical Compliance */}
+      {/* System Requirements & Compatibility */}
+      <section id="requirements" className="py-20 px-4 sm:px-6 lg:px-8 bg-white dark:bg-slate-900">
+        <div className="max-w-4xl mx-auto">
+          <div className="text-center mb-12">
+            <Monitor className="h-16 w-16 text-blue-600 mx-auto mb-6" />
+            <h2 className="text-3xl font-bold text-slate-900 dark:text-white mb-6">
+              System
+              <span className="text-blue-600 dark:text-blue-400"> Requirements</span>
+            </h2>
+          </div>
+          
+          <div className="grid md:grid-cols-2 gap-8">
+            <div className="bg-slate-50 dark:bg-slate-800 p-6 rounded-2xl">
+              <h3 className="text-xl font-semibold text-slate-900 dark:text-white mb-4">Minimum Requirements</h3>
+              <ul className="space-y-3 text-slate-600 dark:text-slate-300">
+                <li className="flex justify-between">
+                  <span>Platform:</span>
+                  <span className="font-medium">macOS</span>
+                </li>
+                <li className="flex justify-between">
+                  <span>Version:</span>
+                  <span className="font-medium">macOS 12.3+ (Monterey)</span>
+                </li>
+                <li className="flex justify-between">
+                  <span>Architecture:</span>
+                  <span className="font-medium">Intel or Apple Silicon</span>
+                </li>
+                <li className="flex justify-between">
+                  <span>Memory:</span>
+                  <span className="font-medium">8GB RAM recommended</span>
+                </li>
+                <li className="flex justify-between">
+                  <span>Storage:</span>
+                  <span className="font-medium">500MB free space</span>
+                </li>
+              </ul>
+            </div>
+            
+            <div className="bg-blue-50 dark:bg-blue-900/20 p-6 rounded-2xl">
+              <h3 className="text-xl font-semibold text-slate-900 dark:text-white mb-4">Feature Compatibility</h3>
+              <ul className="space-y-3 text-sm text-slate-600 dark:text-slate-300">
+                <li className="flex items-center space-x-2">
+                  <CheckCircle className="h-4 w-4 text-green-500" />
+                  <span><strong>macOS 12.3+:</strong> Basic screen recording &amp; audio</span>
+                </li>
+                <li className="flex items-center space-x-2">
+                  <CheckCircle className="h-4 w-4 text-green-500" />
+                  <span><strong>macOS 13.0+:</strong> Enhanced performance modes</span>
+                </li>
+                <li className="flex items-center space-x-2">
+                  <CheckCircle className="h-4 w-4 text-green-500" />
+                  <span><strong>macOS 14.0+:</strong> Presenter Overlay feature</span>
+                </li>
+                <li className="flex items-center space-x-2">
+                  <CheckCircle className="h-4 w-4 text-green-500" />
+                  <span><strong>macOS 15.0+:</strong> Latest optimizations</span>
+                </li>
+              </ul>
+              <p className="mt-4 text-xs text-slate-500 dark:text-slate-400">
+                Latest macOS version recommended for optimal performance and features
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Privacy & Compliance Section */}
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-slate-50 dark:bg-slate-800">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl font-bold text-slate-900 dark:text-white mb-6 text-center">
-            Technical Compliance and
-            <span className="text-blue-600 dark:text-blue-400"> Content Guidelines</span>
+            Privacy &amp;
+            <span className="text-blue-600 dark:text-blue-400"> Compliance</span>
           </h2>
           
-          <div className="bg-white dark:bg-slate-900 p-8 rounded-2xl">
-            <ul className="space-y-4 text-slate-600 dark:text-slate-300">
+          <div className="bg-white dark:bg-slate-900 p-8 rounded-2xl mb-8">
+            <h3 className="text-xl font-semibold text-slate-900 dark:text-white mb-4 flex items-center">
+              <Shield className="h-6 w-6 text-green-500 mr-2" />
+              Privacy First Approach
+            </h3>
+            <ul className="space-y-3 text-slate-600 dark:text-slate-300">
               <li className="flex items-start space-x-3">
                 <CheckCircle className="h-5 w-5 text-green-500 mt-1 flex-shrink-0" />
-                <span>LensFlowPro is only for screen and audio recording. It does not include any unauthorized content downloading features.</span>
+                <span>All recordings are stored locally on your device by default</span>
               </li>
               <li className="flex items-start space-x-3">
                 <CheckCircle className="h-5 w-5 text-green-500 mt-1 flex-shrink-0" />
-                <span>It does not provide special functionality to bypass DRM or record protected streaming media.</span>
+                <span>No automatic data transmission to external servers</span>
               </li>
               <li className="flex items-start space-x-3">
                 <CheckCircle className="h-5 w-5 text-green-500 mt-1 flex-shrink-0" />
-                <span>The core use case is creating original content, such as tutorials, demos, courses, and training videos.</span>
+                <span>Minimal system diagnostic logs for crash reporting only</span>
               </li>
               <li className="flex items-start space-x-3">
                 <CheckCircle className="h-5 w-5 text-green-500 mt-1 flex-shrink-0" />
-                <span>The app does not rely on background upload services and will not collect or transfer recordings without the user's knowledge.</span>
+                <span>Explicit user consent required for any data sharing</span>
               </li>
             </ul>
-            
-            <p className="mt-6 text-sm text-slate-500 dark:text-slate-400 text-center">
-              Users should comply with local laws and regulations and the terms of use of each platform, 
-              and only record content they are legally allowed to record.
-            </p>
+          </div>
+          
+          <div className="bg-white dark:bg-slate-900 p-8 rounded-2xl">
+            <h3 className="text-xl font-semibold text-slate-900 dark:text-white mb-4 flex items-center">
+              <Settings className="h-6 w-6 text-blue-500 mr-2" />
+              App Store Compliance
+            </h3>
+            <div className="space-y-4 text-slate-600 dark:text-slate-300">
+              <div>
+                <h4 className="font-medium text-slate-900 dark:text-white mb-2">Intended Use</h4>
+                <p className="text-sm">LensFlowPro is designed exclusively for creating original content including educational tutorials, software demonstrations, training videos, and personal recordings.</p>
+              </div>
+              
+              <div>
+                <h4 className="font-medium text-slate-900 dark:text-white mb-2">Content Guidelines</h4>
+                <ul className="text-sm space-y-2">
+                  <li>• Does not include functionality to bypass DRM or copyright protection</li>
+                  <li>• Does not record protected streaming media without permission</li>
+                  <li>• Users are responsible for complying with applicable laws and platform terms</li>
+                  <li>• Intended only for recording content users have legal rights to capture</li>
+                </ul>
+              </div>
+              
+              <div>
+                <h4 className="font-medium text-slate-900 dark:text-white mb-2">Technical Standards</h4>
+                <ul className="text-sm space-y-2">
+                  <li>• Follows Apple's Human Interface Guidelines</li>
+                  <li>• Uses App Store review compliant APIs</li>
+                  <li>• Includes required privacy manifests for all third-party SDKs</li>
+                  <li>• No background processes that impact device performance</li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -366,7 +438,7 @@ export default function Home() {
                rel="noopener noreferrer"
                className="inline-flex items-center space-x-2 bg-slate-100 dark:bg-slate-800 text-slate-900 dark:text-white px-6 py-3 rounded-full hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors">
               <span>📖</span>
-              <span>User Manual</span>
+              <span>Privacy Policy &amp; User Manual</span>
               <ArrowRight className="h-4 w-4" />
             </a>
           </div>
