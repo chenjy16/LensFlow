@@ -103,7 +103,7 @@ export default function Home() {
                   <span>Camera Overlays</span>
                 </div>
               </div>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+              <div className="flex flex-col gap-4 justify-center lg:justify-start">
                 <a
                   href="https://apps.apple.com/us/app/lensflowpro/id6757075353?mt=12
                   LensFlowPro"
@@ -113,6 +113,9 @@ export default function Home() {
                 >
                   Get LensFlowPro
                 </a>
+                <p className="text-slate-600 dark:text-slate-400 text-sm">
+                  $29.99 one-time purchase
+                </p>
               </div>
             </div>
 
