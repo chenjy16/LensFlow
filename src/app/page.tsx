@@ -104,9 +104,15 @@ export default function Home() {
                 </div>
               </div>
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                <button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-full font-semibold transition-colors">
+                <a
+                  href="https://apps.apple.com/us/app/lensflowpro/id6757075353?mt=12
+                  LensFlowPro"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-full font-semibold transition-colors inline-block"
+                >
                   Get LensFlowPro
-                </button>
+                </a>
               </div>
             </div>
 
