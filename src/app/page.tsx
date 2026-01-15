@@ -15,7 +15,6 @@ import {
   Mail,
   MousePointer,
   Maximize2,
-  Keyboard,
   Globe,
   Headphones,
   Video,
@@ -87,22 +86,24 @@ export default function Home() {
         "Visualize clicks (different colors for left/right/middle)",
     },
     {
-      category: "Effects",
-      feature: "Privacy-First Keystroke Visualization",
-      description:
-        "Show shortcuts without logging sensitive input (passwords auto-hidden)",
+      category: "Smart Camera",
+      feature: "Metadata Recording",
+      description: "Capture mouse events during screen recording for cinematic playback",
     },
     {
-      category: "Privacy",
-      feature: "App Blocklist",
-      description:
-        "Hide AI prompts from recordings (e.g., ChatGPT, Claude, and more)",
+      category: "Smart Camera",
+      feature: "Manual Keyframe Editing",
+      description: "Add/edit/delete camera keyframes on the timeline for precise control",
     },
     {
-      category: "Privacy",
-      feature: "Secure Input Detection",
-      description:
-        "Automatically hide keystrokes during password entry (incl. password managers)",
+      category: "Smart Camera",
+      feature: "Auto-Analysis",
+      description: "Automatically generate camera movements from mouse behavior",
+    },
+    {
+      category: "Smart Camera",
+      feature: "Deterministic Export",
+      description: "Frame-by-frame reproducible output based on recorded metadata",
     },
     {
       category: "Output",
@@ -283,41 +284,38 @@ export default function Home() {
 
             <div className="bg-white dark:bg-slate-900 p-8 rounded-2xl border border-slate-200 dark:border-slate-700 shadow-sm">
               <div className="flex items-center gap-3 mb-4">
-                <Keyboard className="h-7 w-7 text-blue-600" />
+                <Video className="h-7 w-7 text-blue-600" />
                 <h3 className="text-xl font-semibold text-slate-900 dark:text-white">
-                  ⌨️ Privacy-First Keystroke Visualization
+                  🎬 Smart Camera - Intelligent Cinematic Export
                 </h3>
               </div>
               <p className="text-slate-600 dark:text-slate-300 mb-4">
-                Show your keyboard shortcuts without compromising security.
+                Create professional, cinematic-style screen recordings automatically.
               </p>
               <ul className="space-y-2 text-sm text-slate-600 dark:text-slate-300">
                 <li className="flex items-start gap-2">
                   <CheckCircle className="h-4 w-4 text-green-500 mt-0.5" />
-                  <span>Automatically hides during password input</span>
+                  <span>Metadata Recording - Capture mouse events for playback</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <CheckCircle className="h-4 w-4 text-green-500 mt-0.5" />
-                  <span>
-                    Detects 1Password, LastPass, Bitwarden, and other password
-                    managers
-                  </span>
+                  <span>Manual Keyframe Editing - Full control over the timeline</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <CheckCircle className="h-4 w-4 text-green-500 mt-0.5" />
-                  <span>Zero logging, zero storage, zero network transmission</span>
+                  <span>Auto-Analysis - Smart camera movements from mouse behavior</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <CheckCircle className="h-4 w-4 text-green-500 mt-0.5" />
-                  <span>Perfect for coding tutorials and software demos</span>
+                  <span>Smart Merge - Blend manual and auto keyframes seamlessly</span>
                 </li>
               </ul>
               <div className="mt-6">
                 <a
-                  href="#keystroke-visualization"
+                  href="#smart-camera"
                   className="text-sm font-medium text-blue-600 dark:text-blue-400 hover:underline"
                 >
-                  Learn more about Keystroke Visualization
+                  Learn more about Smart Camera
                 </a>
               </div>
             </div>
@@ -390,18 +388,17 @@ export default function Home() {
           </div>
 
           <div
-            id="keystroke-visualization"
+            id="smart-camera"
             className="mb-12 bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-700 p-8"
           >
             <div className="flex items-start gap-3 mb-6">
-              <Keyboard className="h-7 w-7 text-blue-600 mt-1" />
+              <Video className="h-7 w-7 text-blue-600 mt-1" />
               <div>
                 <h3 className="text-2xl font-semibold text-slate-900 dark:text-white">
-                  Keystroke Visualization Feature
+                  Smart Camera – Intelligent Cinematic Export
                 </h3>
                 <p className="mt-2 text-slate-600 dark:text-slate-300">
-                  When enabled, LensFlowPro shows your keystrokes on-screen while
-                  recording, without storing or transmitting any keystroke data.
+                  Turn your screen recordings into professional cinematic videos with our intelligent camera system.
                 </p>
               </div>
             </div>
@@ -409,21 +406,19 @@ export default function Home() {
             <div className="grid md:grid-cols-2 gap-6">
               <div className="bg-slate-50 dark:bg-slate-800/60 rounded-xl border border-slate-200 dark:border-slate-700 p-6">
                 <h4 className="text-lg font-semibold text-slate-900 dark:text-white mb-4">
-                  What we DO
+                  Cinematic Control
                 </h4>
                 <ul className="space-y-3 text-sm text-slate-600 dark:text-slate-300">
                   <li className="flex items-start gap-2">
                     <CheckCircle className="h-4 w-4 text-green-500 mt-0.5" />
                     <span>
-                      Display your keystrokes on screen in real-time during
-                      recording
+                      <strong>Manual Keyframe Editing:</strong> Add, edit, or delete camera keyframes on the timeline for complete creative control.
                     </span>
                   </li>
                   <li className="flex items-start gap-2">
                     <CheckCircle className="h-4 w-4 text-green-500 mt-0.5" />
                     <span>
-                      Automatically hide keystrokes when you enter passwords or
-                      use password managers
+                      <strong>Timeline Preview:</strong> Real-time preview with smooth interpolation between keyframes.
                     </span>
                   </li>
                 </ul>
@@ -431,25 +426,19 @@ export default function Home() {
 
               <div className="bg-slate-50 dark:bg-slate-800/60 rounded-xl border border-slate-200 dark:border-slate-700 p-6">
                 <h4 className="text-lg font-semibold text-slate-900 dark:text-white mb-4">
-                  What we DO NOT do
+                  Intelligent Analysis
                 </h4>
                 <ul className="space-y-3 text-sm text-slate-600 dark:text-slate-300">
                   <li className="flex items-start gap-2">
-                    <Shield className="h-4 w-4 text-blue-600 mt-0.5" />
-                    <span>Store any keystroke data to your device</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <Shield className="h-4 w-4 text-blue-600 mt-0.5" />
-                    <span>Transmit any keystroke data over the internet</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <Shield className="h-4 w-4 text-blue-600 mt-0.5" />
-                    <span>Keep any history or logs of your keystrokes</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <Shield className="h-4 w-4 text-blue-600 mt-0.5" />
+                    <CheckCircle className="h-4 w-4 text-green-500 mt-0.5" />
                     <span>
-                      Record keystrokes when the feature is disabled
+                      <strong>Auto-Analysis:</strong> Automatically generate smooth camera movements based on recorded mouse behavior.
+                    </span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle className="h-4 w-4 text-green-500 mt-0.5" />
+                    <span>
+                      <strong>Smart Merge:</strong> Manual keyframes take priority; auto keyframes intelligently fill the gaps.
                     </span>
                   </li>
                 </ul>
@@ -459,26 +448,19 @@ export default function Home() {
             <div className="mt-6 grid md:grid-cols-2 gap-6">
               <div className="bg-slate-50 dark:bg-slate-800/60 rounded-xl border border-slate-200 dark:border-slate-700 p-6">
                 <h4 className="text-lg font-semibold text-slate-900 dark:text-white mb-4">
-                  Security Measures
+                  Precision Export
                 </h4>
                 <ul className="space-y-3 text-sm text-slate-600 dark:text-slate-300">
                   <li className="flex items-start gap-2">
                     <CheckCircle className="h-4 w-4 text-green-500 mt-0.5" />
-                    <span>The feature is disabled by default</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle className="h-4 w-4 text-green-500 mt-0.5" />
                     <span>
-                      Keystrokes are automatically hidden during secure input
-                      (password fields)
+                      <strong>Deterministic Export:</strong> Same input always produces the same output, ensuring frame-reproducible results.
                     </span>
                   </li>
                   <li className="flex items-start gap-2">
                     <CheckCircle className="h-4 w-4 text-green-500 mt-0.5" />
                     <span>
-                      Keystrokes are automatically hidden when using sensitive
-                      applications like 1Password, LastPass, Keychain Access,
-                      etc.
+                      <strong>Export Validation:</strong> Pre-export checks prevent invalid outputs and ensure high-quality renders.
                     </span>
                   </li>
                 </ul>
@@ -486,21 +468,13 @@ export default function Home() {
 
               <div className="bg-slate-50 dark:bg-slate-800/60 rounded-xl border border-slate-200 dark:border-slate-700 p-6">
                 <h4 className="text-lg font-semibold text-slate-900 dark:text-white mb-4">
-                  Your Control
+                  Metadata Capture
                 </h4>
                 <ul className="space-y-3 text-sm text-slate-600 dark:text-slate-300">
                   <li className="flex items-start gap-2">
-                    <Settings className="h-4 w-4 text-blue-600 mt-0.5" />
+                    <CheckCircle className="h-4 w-4 text-green-500 mt-0.5" />
                     <span>
-                      You can enable or disable this feature at any time in
-                      Settings
-                    </span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <Settings className="h-4 w-4 text-blue-600 mt-0.5" />
-                    <span>
-                      You can revoke Accessibility permission in System Settings
-                      at any time
+                      <strong>Metadata Recording:</strong> Capture raw mouse events during recording for high-fidelity reconstruction during export.
                     </span>
                   </li>
                 </ul>
@@ -949,77 +923,48 @@ export default function Home() {
 
           <div className="bg-white dark:bg-slate-900 p-8 rounded-2xl mb-8">
             <h3 className="text-xl font-semibold text-slate-900 dark:text-white mb-4 flex items-center">
-              <Keyboard className="h-6 w-6 text-blue-500 mr-2" />
-              Keystroke Visualization
+              <Video className="h-6 w-6 text-blue-500 mr-2" />
+              Smart Camera Privacy
             </h3>
             <p className="text-slate-600 dark:text-slate-300 mb-6">
-              When enabled, keystrokes appear on screen during recording.
+              Metadata recorded for cinematic export is handled with the same privacy standards as your video data.
             </p>
 
             <div className="grid md:grid-cols-2 gap-6">
               <div>
                 <h4 className="font-medium text-slate-900 dark:text-white mb-3">
-                  What we do
+                  Metadata We Collect
                 </h4>
                 <ul className="space-y-2 text-sm text-slate-600 dark:text-slate-300">
                   <li className="flex items-start gap-2">
                     <CheckCircle className="h-4 w-4 text-green-500 mt-0.5" />
-                    <span>Display keystrokes in real time</span>
+                    <span>Mouse position and click timing</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <CheckCircle className="h-4 w-4 text-green-500 mt-0.5" />
-                    <span>Auto-hide during password entry</span>
+                    <span>Active window focus changes</span>
                   </li>
                 </ul>
               </div>
 
               <div>
                 <h4 className="font-medium text-slate-900 dark:text-white mb-3">
-                  What we never do
+                  Privacy Safeguards
                 </h4>
                 <ul className="space-y-2 text-sm text-slate-600 dark:text-slate-300">
                   <li className="flex items-start gap-2">
                     <Shield className="h-4 w-4 text-blue-500 mt-0.5" />
-                    <span>Store keystroke data</span>
+                    <span>Stored only in your local project file</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <Shield className="h-4 w-4 text-blue-500 mt-0.5" />
-                    <span>Transmit data over the internet</span>
+                    <span>Never transmitted to cloud servers</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <Shield className="h-4 w-4 text-blue-500 mt-0.5" />
-                    <span>Keep logs or history</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <Shield className="h-4 w-4 text-blue-500 mt-0.5" />
-                    <span>Record when disabled</span>
+                    <span>Deleted when the recording project is removed</span>
                   </li>
                 </ul>
-              </div>
-            </div>
-
-            <div className="mt-6 pt-6 border-t border-slate-200 dark:border-slate-700">
-              <div className="grid md:grid-cols-2 gap-6">
-                <div>
-                  <h4 className="font-medium text-slate-900 dark:text-white mb-3">
-                    Security
-                  </h4>
-                  <ul className="space-y-2 text-sm text-slate-600 dark:text-slate-300">
-                    <li>• Disabled by default</li>
-                    <li>• Hidden during secure input fields</li>
-                    <li>• Hidden in 1Password, LastPass, Keychain Access</li>
-                  </ul>
-                </div>
-
-                <div>
-                  <h4 className="font-medium text-slate-900 dark:text-white mb-3">
-                    Your control
-                  </h4>
-                  <ul className="space-y-2 text-sm text-slate-600 dark:text-slate-300">
-                    <li>• Toggle anytime in Settings</li>
-                    <li>• Revoke Accessibility permission in System Settings</li>
-                  </ul>
-                </div>
               </div>
             </div>
           </div>
