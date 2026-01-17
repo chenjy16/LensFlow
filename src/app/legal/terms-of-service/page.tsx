@@ -1,10 +1,5 @@
-/**
- * Terms of Service page for LensFlowPro app
- * Note: This is a static, content-driven page inspired by the reference terms
- */
-
-import Link from "next/link";
 import { Shield } from "lucide-react";
+import Link from "next/link";
 
 export default function TermsOfService() {
   return (
@@ -100,7 +95,7 @@ export default function TermsOfService() {
           <section className="bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-700 p-8 mb-8 shadow-sm">
             <h2 className="text-2xl font-bold text-slate-900 dark:text-white mb-4">8. Disclaimers</h2>
             <p className="text-slate-700 dark:text-slate-300 mb-4">
-              LensFlowPro is provided “as is” and without warranties of any kind. To the maximum extent
+              LensFlowPro is provided "as is" and without warranties of any kind. To the maximum extent
               permitted by law, LensFlowPro disclaims all warranties, express or implied, including but not limited
               to implied warranties of merchantability and fitness for a particular purpose.
             </p>
@@ -123,7 +118,7 @@ export default function TermsOfService() {
             </p>
           </section>
 
-          <section className="bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-700 p-8 shadow-sm">
+          <section className="bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-700 p-8 mb-8 shadow-sm">
             <h2 className="text-2xl font-bold text-slate-900 dark:text-white mb-4">11. Contact</h2>
             <p className="text-slate-700 dark:text-slate-300 mb-4">
               If you have questions about these Terms, please contact us at
@@ -132,5 +127,19 @@ export default function TermsOfService() {
             <p className="text-slate-700 dark:text-slate-300 mb-0">
               Email: <a className="text-blue-600" href="mailto:chenjianyu944@gmail.com">chenjianyu944@gmail.com</a>
             </p>
-          </section>\n\n          <section className=\"bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-700 p-8 shadow-sm\">\n            <h2 className=\"text-2xl font-bold text-slate-900 dark:text-white mb-4\">12. Payment & Billing</h2>\n            <p className=\"text-slate-700 dark:text-slate-300 mb-4\">\n              LensFlowPro payments may be processed by Creem (final processor Creem). We do not store full payment card information on our servers. The terms of the payment processor apply. See Creem's Privacy Policy: creem.io/privacy.\n            </p>\n            <p className=\"text-slate-700 dark:text-slate-300 mb-4\">\n              For details, see the respective payment processor policy links when available.\n            </p>\n          </section>\n        </div>\n      </div>\n    </div>\n  );
+          </section>
+
+          <section className="bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-700 p-8 shadow-sm">
+            <h2 className="text-2xl font-bold text-slate-900 dark:text-white mb-4">12. Payment & Billing</h2>
+            <p className="text-slate-700 dark:text-slate-300 mb-4">
+              LensFlowPro payments are processed by Creem. We do not store full payment card information on our servers. The terms of the payment processor apply.
+            </p>
+            <p className="text-slate-700 dark:text-slate-300 mb-4">
+              For details, see the respective payment processor policy links when available.
+            </p>
+          </section>
+        </div>
+      </div>
+    </div>
+  );
 }
