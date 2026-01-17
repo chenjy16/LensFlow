@@ -52,10 +52,9 @@ export default function PrivacyPolicy() {
                 <p className="mt-3">For all matters regarding our services or the processing of your personal data, please contact us at the email address above.</p>
               </div>
 
-              <div>
-                <h3 className="text-xl font-semibold text-slate-900 dark:text-white mb-3">Payment Processors</h3>
-                <p className="text-sm mb-2">LensFlowPro payments may be processed by Creem (primary) or Paddle (alternative). We do not store full payment card information on our servers. Processing policies are provided by the payment processors.</p>
-                <p className="text-sm">Creem policy: creem.io/privacy. Final processor will be chosen and disclosed in future updates.</p>
+               <div>
+                <h3 className="text-xl font-semibold text-slate-900 dark:text-white mb-3">Payment Processor</h3>
+                <p className="text-sm mb-2">LensFlowPro payments may be processed by Creem. We do not store full payment card information on our servers. Processing policies are provided by the payment processor.</p>
               </div>
 
               <div>
