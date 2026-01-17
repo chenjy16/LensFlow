@@ -1,7 +1,5 @@
 import {
   ArrowRight,
-  Download,
-  Star,
   CheckCircle,
   Camera,
   Monitor,
@@ -13,14 +11,12 @@ import {
   User,
   Settings,
   Mail,
-  MousePointer,
   Maximize2,
-  Globe,
   Headphones,
   Video,
-  Grid3x3,
 } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   const fullFeatureRows = [
@@ -164,6 +160,12 @@ export default function Home() {
               >
                 Support
               </a>
+              <Link
+                href="/legal/privacy-and-cookie-policy"
+                className="text-slate-600 dark:text-slate-300 hover:text-blue-600 transition-colors"
+              >
+                Privacy Policy
+              </Link>
             </div>
           </div>
         </div>
@@ -653,7 +655,7 @@ export default function Home() {
               <div className="bg-white dark:bg-slate-900 p-8 rounded-xl max-w-2xl mx-auto">
                 <User className="h-12 w-12 text-blue-600 mx-auto mb-4" />
                 <p className="text-slate-600 dark:text-slate-300 mb-4">
-                  On macOS 14+, LensFlowPro supports Apple's Presenter Overlay
+                  On macOS 14+, LensFlowPro supports Apple&apos;s Presenter Overlay
                   feature for professional narration. Your camera feed appears
                   naturally on screen without blocking key content.
                 </p>
@@ -732,7 +734,7 @@ export default function Home() {
                   <CheckCircle className="h-5 w-5 text-green-500 mt-1 flex-shrink-0" />
                   <span>
                     Supports mouse highlight and zoom effects to better guide
-                    viewers' attention
+                    viewers&apos; attention
                   </span>
                 </li>
               </ul>
@@ -785,7 +787,7 @@ export default function Home() {
                 System Integration
               </h3>
               <ul className="space-y-3 text-sm text-slate-600 dark:text-slate-300">
-                <li>• Uses Apple's native screen recording APIs</li>
+                <li>• Uses Apple&apos;s native screen recording APIs</li>
                 <li>• Complies with macOS security permissions</li>
                 <li>• Respects user privacy settings and controls</li>
                 <li>• Follows App Store sandboxing requirements</li>
@@ -1038,9 +1040,9 @@ export default function Home() {
             </a>
 
             <div className="mt-6 text-left bg-blue-700/50 p-4 rounded-lg">
-              <p className="text-sm mb-2 font-medium">
-                When reaching out, it's helpful if you can also include:
-              </p>
+                <p className="text-sm mb-2 font-medium">
+                  When reaching out, it&apos;s helpful if you can also include:
+                </p>
               <ul className="text-sm text-blue-100 space-y-1">
                 <li>• Your macOS version</li>
                 <li>• Your Mac model</li>
@@ -1083,7 +1085,15 @@ export default function Home() {
               Professional Mac screen recording for creators, educators, and
               developers.
             </p>
-            <p className="text-slate-500 text-sm">
+            <div className="mt-4 flex items-center justify-center space-x-6 text-sm text-slate-400">
+              <Link
+                href="/legal/privacy-and-cookie-policy"
+                className="hover:text-white transition-colors"
+              >
+                Privacy Policy
+              </Link>
+            </div>
+            <p className="text-slate-500 text-sm mt-4">
               &copy; 2024 LensFlowPro. All rights reserved.
             </p>
           </div>
