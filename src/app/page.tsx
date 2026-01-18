@@ -205,7 +205,7 @@ export default function Home() {
               </div>
               <div className="flex flex-col gap-4 justify-center lg:justify-start">
                 <a
-                  href="https://apps.apple.com/us/app/lensflowpro/id6757075353?mt=12"
+                  href="https://dl.lensflowpro.qzz.io/LensFlowPro-2.1.0.dmg"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-full font-semibold transition-colors inline-block"
