@@ -121,16 +121,15 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-slate-100 dark:from-slate-900 dark:to-slate-800">
       {/* Navigation */}
-      <nav className="fixed top-0 w-full bg-white/80 dark:bg-slate-900/80 backdrop-blur-md z-50 border-b border-slate-200 dark:border-slate-700">
+      <nav className="fixed top-0 w-full bg-white/95 dark:bg-slate-900/95 backdrop-blur-lg z-50 border-b border-slate-200/50 dark:border-slate-700/50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
-            <div className="flex items-center space-x-2">
+            <div className="flex items-center space-x-3">
               <img
                 src="/icon1.png"
                 alt="LensFlowPro Icon"
-                className="h-6 w-6"
+                className="h-8 w-8"
               />
-              <Monitor className="h-8 w-8 text-blue-600" />
               <span className="text-xl font-bold text-slate-900 dark:text-white">
                 LensFlowPro
               </span>
@@ -138,45 +137,39 @@ export default function Home() {
             <div className="hidden md:flex items-center space-x-8">
               <a
                 href="#features"
-                className="text-slate-600 dark:text-slate-300 hover:text-blue-600 transition-colors"
+                className="text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-blue-600 transition-colors"
               >
                 Features
               </a>
               <a
                 href="#advantages"
-                className="text-slate-600 dark:text-slate-300 hover:text-blue-600 transition-colors"
+                className="text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-blue-600 transition-colors"
               >
-                Advantages
+                Why Us
               </a>
               <a
                 href="#requirements"
-                className="text-slate-600 dark:text-slate-300 hover:text-blue-600 transition-colors"
+                className="text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-blue-600 transition-colors"
               >
                 Requirements
               </a>
               <a
-                href="#support"
-                className="text-slate-600 dark:text-slate-300 hover:text-blue-600 transition-colors"
+                href="mailto:chenjianyu944@gmail.com"
+                className="text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-blue-600 transition-colors"
               >
-                Support
+                Contact
               </a>
-              <Link
-                href="/legal/privacy-and-cookie-policy"
-                className="text-slate-600 dark:text-slate-300 hover:text-blue-600 transition-colors"
-              >
-                Privacy Policy
-              </Link>
             </div>
           </div>
         </div>
       </nav>
 
       {/* Hero Section */}
-      <section className="pt-32 pb-20 px-4 sm:px-6 lg:px-8">
+      <section className="pt-32 pb-24 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
-          <div className="lg:grid lg:grid-cols-2 lg:gap-12 lg:items-center">
+          <div className="lg:grid lg:grid-cols-2 lg:gap-16 lg:items-center">
             <div className="text-center lg:text-left">
-              <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-slate-900 dark:text-white mb-6 leading-tight">
+              <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-slate-900 dark:text-white mb-6 leading-tight tracking-tight">
                 Record Your Mac
                 <span className="text-blue-600 dark:text-blue-400">
                   {" "}
@@ -184,37 +177,38 @@ export default function Home() {
                 </span>
               </h1>
 
-              <p className="text-xl text-slate-600 dark:text-slate-300 mb-10 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
-                Native macOS screen recording with professional features. Built
-                for creators, developers, and educators.
+              <p className="text-xl text-slate-600 dark:text-slate-300 mb-8 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
+                Professional screen recording for Mac. Built for creators, developers, and educators.
               </p>
 
-              <div className="flex flex-wrap justify-center lg:justify-start gap-4 text-sm text-slate-600 dark:text-slate-300 mb-10">
-                <div className="flex items-center space-x-2">
-                  <CheckCircle className="h-5 w-5 text-green-500" />
-                  <span>Native Performance</span>
-                </div>
-                <div className="flex items-center space-x-2">
-                  <CheckCircle className="h-5 w-5 text-green-500" />
-                  <span>True Multi-Track Audio</span>
-                </div>
-                <div className="flex items-center space-x-2">
-                  <CheckCircle className="h-5 w-5 text-green-500" />
-                  <span>Camera Overlays</span>
-                </div>
-              </div>
-              <div className="flex flex-col gap-4 justify-center lg:justify-start">
+              <div className="flex flex-col gap-4 justify-center lg:justify-start mb-8">
                 <a
                   href="https://dl.lensflowpro.qzz.io/LensFlowPro-2.1.0.dmg"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-full font-semibold transition-colors inline-block"
+                  className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-full font-semibold text-lg transition-all inline-flex items-center justify-center gap-2 shadow-lg hover:shadow-xl hover:scale-105"
                 >
-                  Get LensFlowPro
+                  Download Now
+                  <ArrowRight className="h-5 w-5" />
                 </a>
-                <p className="text-slate-600 dark:text-slate-400 text-sm">
-                  $29.99 one-time purchase
+                <p className="text-slate-500 dark:text-slate-400 text-sm">
+                  One-time purchase • $29.99
                 </p>
+              </div>
+
+              <div className="flex flex-wrap justify-center lg:justify-start gap-4 text-sm">
+                <div className="flex items-center gap-2 bg-white dark:bg-slate-800 px-4 py-2 rounded-full border border-slate-200 dark:border-slate-700">
+                  <CheckCircle className="h-4 w-4 text-green-500" />
+                  <span className="text-slate-700 dark:text-slate-300">Native Performance</span>
+                </div>
+                <div className="flex items-center gap-2 bg-white dark:bg-slate-800 px-4 py-2 rounded-full border border-slate-200 dark:border-slate-700">
+                  <CheckCircle className="h-4 w-4 text-green-500" />
+                  <span className="text-slate-700 dark:text-slate-300">Multi-Track Audio</span>
+                </div>
+                <div className="flex items-center gap-2 bg-white dark:bg-slate-800 px-4 py-2 rounded-full border border-slate-200 dark:border-slate-700">
+                  <CheckCircle className="h-4 w-4 text-green-500" />
+                  <span className="text-slate-700 dark:text-slate-300">Smart Camera</span>
+                </div>
               </div>
             </div>
 
@@ -224,7 +218,7 @@ export default function Home() {
                 alt="LensFlowPro user interface showing screen recording controls and camera overlay"
                 width={1200}
                 height={700}
-                className="w-full rounded-lg shadow-xl"
+                className="w-full rounded-2xl shadow-2xl border border-slate-200 dark:border-slate-700"
                 priority
               />
             </div>
@@ -234,29 +228,24 @@ export default function Home() {
 
       <section
         id="features"
-        className="py-20 px-4 sm:px-6 lg:px-8 bg-slate-50 dark:bg-slate-800"
+        className="py-24 px-4 sm:px-6 lg:px-8 bg-white dark:bg-slate-900"
       >
         <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-slate-900 dark:text-white mb-4">
-              Feature
-              <span className="text-blue-600 dark:text-blue-400">
-                {" "}
-                Highlights
-              </span>
+          <div className="text-center mb-20">
+            <h2 className="text-4xl sm:text-5xl font-bold text-slate-900 dark:text-white mb-4">
+              Key Features
             </h2>
-            <p className="text-lg text-slate-600 dark:text-slate-300 max-w-3xl mx-auto">
-              Built for modern creators: privacy-first recording, AI workflow
-              protection, and pro audio.
+            <p className="text-xl text-slate-600 dark:text-slate-300 max-w-2xl mx-auto">
+              Professional-grade tools for modern creators
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-6 mb-12">
+          <div className="grid md:grid-cols-2 gap-8 mb-16">
             <div className="bg-white dark:bg-slate-900 p-8 rounded-2xl border border-slate-200 dark:border-slate-700 shadow-sm">
               <div className="flex items-center gap-3 mb-4">
                 <Shield className="h-7 w-7 text-blue-600" />
                 <h3 className="text-xl font-semibold text-slate-900 dark:text-white">
-                  🔒 App Blocklist - Hide AI Prompts from Recordings
+                  App Blocklist
                 </h3>
               </div>
               <p className="text-slate-600 dark:text-slate-300 mb-4">
@@ -288,7 +277,7 @@ export default function Home() {
               <div className="flex items-center gap-3 mb-4">
                 <Video className="h-7 w-7 text-blue-600" />
                 <h3 className="text-xl font-semibold text-slate-900 dark:text-white">
-                  🎬 Smart Camera - Intelligent Cinematic Export
+                  Smart Camera
                 </h3>
               </div>
               <p className="text-slate-600 dark:text-slate-300 mb-4">
@@ -326,7 +315,7 @@ export default function Home() {
               <div className="flex items-center gap-3 mb-4">
                 <Maximize2 className="h-7 w-7 text-blue-600" />
                 <h3 className="text-xl font-semibold text-slate-900 dark:text-white">
-                  🔍 Real-Time Screen Magnifier
+                  Real-Time Screen Magnifier
                 </h3>
               </div>
               <p className="text-slate-600 dark:text-slate-300 mb-4">
@@ -355,7 +344,7 @@ export default function Home() {
               <div className="flex items-center gap-3 mb-4">
                 <Headphones className="h-7 w-7 text-blue-600" />
                 <h3 className="text-xl font-semibold text-slate-900 dark:text-white">
-                  🎙️ True Multi-Track Audio
+                  True Multi-Track Audio
                 </h3>
               </div>
               <p className="text-slate-600 dark:text-slate-300 mb-4">
@@ -529,7 +518,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-slate-900 dark:text-white mb-4">
-              🎬 Perfect
+              Perfect
               <span className="text-blue-600 dark:text-blue-400"> For</span>
             </h2>
           </div>
@@ -1065,7 +1054,7 @@ export default function Home() {
               rel="noopener noreferrer"
               className="inline-flex items-center space-x-2 bg-slate-100 dark:bg-slate-800 text-slate-900 dark:text-white px-6 py-3 rounded-full hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors"
             >
-              <span>📖</span>
+              <Mail className="h-4 w-4" />
               <span>Privacy Policy &amp; User Manual</span>
               <ArrowRight className="h-4 w-4" />
             </a>
