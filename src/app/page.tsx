@@ -195,7 +195,7 @@ export default function Home() {
                   One-time purchase • $29.99
                 </p>
                 <p className="text-slate-400 dark:text-slate-500 text-xs text-center lg:text-left">
-                  Secure payment processed by Creem
+                  Secure payment processed by Paddle
                 </p>
               </div>
 
@@ -1098,7 +1098,7 @@ export default function Home() {
               </Link>
             </div>
             <p className="text-slate-500 text-xs mt-6 max-w-2xl mx-auto">
-              Payments are securely processed by Creem as our merchant of record.
+              Payments are securely processed by Paddle as our merchant of record.
             </p>
             <p className="text-slate-500 text-sm mt-4">
               &copy; 2025 LensFlowPro. All rights reserved.

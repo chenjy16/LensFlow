@@ -31,9 +31,12 @@ export default function TermsOfService() {
           <section className="bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-700 p-8 mb-8 shadow-sm">
             <h2 className="text-2xl font-bold text-slate-900 dark:text-white mb-4">1. Introduction</h2>
             <p className="text-slate-700 dark:text-slate-300 mb-4">
-              These Terms govern your use of LensFlowPro software and services. By
+              These Terms govern your use of LensFlowPro software and services provided by jianyu ("we", "us", or "our"). By
               installing, accessing or using LensFlowPro, you agree to be bound by these
               Terms. If you do not agree, do not use the software.
+            </p>
+            <p className="text-slate-700 dark:text-slate-300 mb-0">
+              <strong>Legal Business Name:</strong> jianyu
             </p>
           </section>
 
@@ -132,10 +135,10 @@ export default function TermsOfService() {
           <section className="bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-700 p-8 shadow-sm">
             <h2 className="text-2xl font-bold text-slate-900 dark:text-white mb-4">12. Payment & Billing</h2>
             <p className="text-slate-700 dark:text-slate-300 mb-4">
-              LensFlowPro payments are processed by Creem. We do not store full payment card information on our servers. The terms of the payment processor apply.
+              LensFlowPro payments are processed by Paddle. We do not store full payment card information on our servers. The terms of the payment processor apply.
             </p>
-            <p className="text-slate-700 dark:text-slate-300 mb-4">
-              For details, see the respective payment processor policy links when available.
+            <p className="text-slate-700 dark:text-slate-300 mb-0">
+              Paddle acts as our Merchant of Record for all transactions.
             </p>
           </section>
         </div>

@@ -54,25 +54,31 @@ export default function RefundPolicy() {
 
           <section className="bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-700 p-8 mb-8 shadow-sm">
             <h2 className="text-2xl font-bold text-slate-900 dark:text-white mb-4">
-              1. Scope
+              1. Refund Window
             </h2>
             <p className="text-slate-700 dark:text-slate-300 mb-4">
-              This Refund Policy applies to LensFlowPro digital licenses and
-              related services purchased via our website or App Store. It
-              describes eligibility and the process for requesting refunds.
+              We offer a <strong>30-day money-back guarantee</strong> from the date of purchase. 
+              If you are not satisfied with LensFlowPro for any reason, you may request a full refund 
+              within 30 days of your purchase date.
             </p>
           </section>
 
           <section className="bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-700 p-8 mb-8 shadow-sm">
             <h2 className="text-2xl font-bold text-slate-900 dark:text-white mb-4">
-              2. Eligibility
+              2. How to Request a Refund
             </h2>
             <p className="text-slate-700 dark:text-slate-300 mb-4">
-              Refund requests are evaluated on a case-by-case basis. Eligible
-              scenarios include non-delivered or defective products, or cases
-              where the product substantially fails to meet its described
-              features.
+              To request a refund, please contact us at{" "}
+              <a href="mailto:chenjianyu944@gmail.com" className="text-blue-600 hover:underline font-medium">
+                chenjianyu944@gmail.com
+              </a>{" "}
+              with the following information:
             </p>
+            <ul className="list-disc list-inside space-y-2 ml-4 text-slate-700 dark:text-slate-300">
+              <li>Your order number or transaction ID</li>
+              <li>The email address used for purchase</li>
+              <li>Purchase date</li>
+            </ul>
           </section>
 
           <section className="bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-700 p-8 mb-8 shadow-sm">
@@ -80,57 +86,30 @@ export default function RefundPolicy() {
               3. Processing Time
             </h2>
             <p className="text-slate-700 dark:text-slate-300 mb-4">
-              Refunds are typically processed within 7–14 business days after
-              approval, depending on the payment processor and payment method.
-            </p>
-          </section>
-
-          <section className="bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-700 p-8 mb-8 shadow-sm">
-            <h2 className="text-2xl font-bold text-slate-900 dark:text-white mb-4">
-              4. How to Request
-            </h2>
-            <p className="text-slate-700 dark:text-slate-300 mb-4">
-              To request a refund, please contact us with your order details at{" "}
-              <span className="font-medium">chenjianyu944@gmail.com</span>.
-            </p>
-            <ul className="list-disc list-inside space-y-1 ml-4 text-slate-700 dark:text-slate-300">
-              <li>Order number</li>
-              <li>Purchase email</li>
-              <li>Purchase date</li>
-              <li>Reason for refund</li>
-            </ul>
-          </section>
-
-          <section className="bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-700 p-8 mb-8 shadow-sm">
-            <h2 className="text-2xl font-bold text-slate-900 dark:text-white mb-4">
-              5. Exclusions
-            </h2>
-            <p className="text-slate-700 dark:text-slate-300 mb-4">
-              Digital licenses, activated licenses, or services that have
-              already been delivered or used extensively may be excluded
-              depending on policy and local law.
-            </p>
-          </section>
-
-          <section className="bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-700 p-8 mb-8 shadow-sm">
-            <h2 className="text-2xl font-bold text-slate-900 dark:text-white mb-4">
-              6. Refunds with Payment Processors
-            </h2>
-            <p className="text-slate-700 dark:text-slate-300 mb-4">
-              Refunds are issued through the payment processor used at purchase.
-              refunds will be processed according to their policies. We will
-              provide links to the processors' refund policies where available.
+              Refunds are typically processed within 5-7 business days after approval. 
+              The refund will be issued to your original payment method. Please allow 
+              additional time for your bank or payment provider to process the refund.
             </p>
           </section>
 
           <section className="bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-700 p-8 shadow-sm">
             <h2 className="text-2xl font-bold text-slate-900 dark:text-white mb-4">
-              7. Updates to Policy
+              4. Contact Information
             </h2>
-            <p className="text-slate-700 dark:text-slate-300 mb-0">
-              We may update this Refund Policy from time to time. We will post
-              the updated policy on this page and update the Last Updated date.
+            <p className="text-slate-700 dark:text-slate-300 mb-2">
+              For any questions about our refund policy, please contact:
             </p>
+            <div className="bg-slate-50 dark:bg-slate-800 p-4 rounded-lg">
+              <p className="text-slate-700 dark:text-slate-300">
+                <strong>Email:</strong>{" "}
+                <a href="mailto:chenjianyu944@gmail.com" className="text-blue-600 hover:underline">
+                  chenjianyu944@gmail.com
+                </a>
+              </p>
+              <p className="text-slate-700 dark:text-slate-300 mt-2">
+                <strong>Business Name:</strong> jianyu
+              </p>
+            </div>
           </section>
         </div>
       </div>

@@ -54,7 +54,7 @@ export default function PrivacyPolicy() {
 
                <div>
                 <h3 className="text-xl font-semibold text-slate-900 dark:text-white mb-3">Payment Processor</h3>
-                <p className="text-sm mb-2">LensFlowPro payments may be processed by Creem. We do not store full payment card information on our servers. Processing policies are provided by the payment processor.</p>
+                <p className="text-sm mb-2">LensFlowPro payments are processed by Paddle. We do not store full payment card information on our servers. Paddle acts as our Merchant of Record.</p>
               </div>
 
               <div>
