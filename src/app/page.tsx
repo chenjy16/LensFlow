@@ -191,8 +191,11 @@ export default function Home() {
                   Download Now
                   <ArrowRight className="h-5 w-5" />
                 </a>
-                <p className="text-slate-500 dark:text-slate-400 text-sm">
+                <p className="text-slate-500 dark:text-slate-400 text-sm text-center lg:text-left">
                   One-time purchase • $29.99
+                </p>
+                <p className="text-slate-400 dark:text-slate-500 text-xs text-center lg:text-left">
+                  Secure payment processed by Creem
                 </p>
               </div>
 
@@ -1074,16 +1077,31 @@ export default function Home() {
               Professional Mac screen recording for creators, educators, and
               developers.
             </p>
-            <div className="mt-4 flex items-center justify-center space-x-6 text-sm text-slate-400">
+            <div className="mt-4 flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-sm text-slate-400">
               <Link
                 href="/legal/privacy-and-cookie-policy"
                 className="hover:text-white transition-colors"
               >
                 Privacy Policy
               </Link>
+              <Link
+                href="/legal/refund-policy"
+                className="hover:text-white transition-colors"
+              >
+                Refund Policy
+              </Link>
+              <Link
+                href="/legal/terms-of-service"
+                className="hover:text-white transition-colors"
+              >
+                Terms of Service
+              </Link>
             </div>
+            <p className="text-slate-500 text-xs mt-6 max-w-2xl mx-auto">
+              Payments are securely processed by Creem as our merchant of record.
+            </p>
             <p className="text-slate-500 text-sm mt-4">
-              &copy; 2024 LensFlowPro. All rights reserved.
+              &copy; 2025 LensFlowPro. All rights reserved.
             </p>
           </div>
         </div>
