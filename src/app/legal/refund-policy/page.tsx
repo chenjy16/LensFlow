@@ -41,73 +41,73 @@ export default function RefundPolicy() {
       </nav>
 
       <div className="pt-24 pb-20 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto">
+        <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
             <Shield className="h-16 w-16 text-blue-600 mx-auto mb-4" />
             <h1 className="text-4xl sm:text-5xl font-bold text-slate-900 dark:text-white mb-2">
               Refund Policy
             </h1>
             <p className="text-lg text-slate-600 dark:text-slate-300">
-              Last updated: January 17, 2026
+              Last updated: January 18, 2026
             </p>
           </div>
 
           <section className="bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-700 p-8 mb-8 shadow-sm">
             <h2 className="text-2xl font-bold text-slate-900 dark:text-white mb-4">
-              1. Refund Window
+              30-Day Money-Back Guarantee
             </h2>
-            <p className="text-slate-700 dark:text-slate-300 mb-4">
-              We offer a <strong>30-day money-back guarantee</strong> from the date of purchase. 
-              If you are not satisfied with LensFlowPro for any reason, you may request a full refund 
-              within 30 days of your purchase date.
+            <p className="text-slate-700 dark:text-slate-300 mb-4 text-lg">
+              We offer a <strong>30-day money-back guarantee</strong>. If you are not satisfied with 
+              LensFlowPro for any reason, you can request a full refund within 30 days of your purchase.
             </p>
           </section>
 
           <section className="bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-700 p-8 mb-8 shadow-sm">
             <h2 className="text-2xl font-bold text-slate-900 dark:text-white mb-4">
-              2. How to Request a Refund
+              How to Request a Refund
             </h2>
             <p className="text-slate-700 dark:text-slate-300 mb-4">
-              To request a refund, please contact us at{" "}
-              <a href="mailto:chenjianyu944@gmail.com" className="text-blue-600 hover:underline font-medium">
-                chenjianyu944@gmail.com
-              </a>{" "}
-              with the following information:
+              To request a refund, please contact us at:
             </p>
-            <ul className="list-disc list-inside space-y-2 ml-4 text-slate-700 dark:text-slate-300">
-              <li>Your order number or transaction ID</li>
-              <li>The email address used for purchase</li>
-              <li>Purchase date</li>
-            </ul>
+            <div className="bg-blue-50 dark:bg-blue-900/20 p-4 rounded-lg mb-4">
+              <p className="text-slate-700 dark:text-slate-300">
+                <strong>Email:</strong>{" "}
+                <a href="mailto:chenjianyu944@gmail.com" className="text-blue-600 hover:underline font-medium">
+                  chenjianyu944@gmail.com
+                </a>
+              </p>
+            </div>
+            <p className="text-slate-700 dark:text-slate-300 text-sm">
+              Please include your order number or transaction ID in your refund request.
+            </p>
           </section>
 
           <section className="bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-700 p-8 mb-8 shadow-sm">
             <h2 className="text-2xl font-bold text-slate-900 dark:text-white mb-4">
-              3. Processing Time
+              Refund Processing
             </h2>
             <p className="text-slate-700 dark:text-slate-300 mb-4">
-              Refunds are typically processed within 5-7 business days after approval. 
-              The refund will be issued to your original payment method. Please allow 
-              additional time for your bank or payment provider to process the refund.
+              Refunds will be issued to your original payment method. Processing times may vary 
+              depending on your payment provider.
             </p>
           </section>
 
           <section className="bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-700 p-8 shadow-sm">
             <h2 className="text-2xl font-bold text-slate-900 dark:text-white mb-4">
-              4. Contact Information
+              Contact Information
             </h2>
-            <p className="text-slate-700 dark:text-slate-300 mb-2">
-              For any questions about our refund policy, please contact:
+            <p className="text-slate-700 dark:text-slate-300 mb-4">
+              For questions about refunds or our refund policy:
             </p>
             <div className="bg-slate-50 dark:bg-slate-800 p-4 rounded-lg">
               <p className="text-slate-700 dark:text-slate-300">
+                <strong>Business Name:</strong> jianyu
+              </p>
+              <p className="text-slate-700 dark:text-slate-300 mt-2">
                 <strong>Email:</strong>{" "}
                 <a href="mailto:chenjianyu944@gmail.com" className="text-blue-600 hover:underline">
                   chenjianyu944@gmail.com
                 </a>
-              </p>
-              <p className="text-slate-700 dark:text-slate-300 mt-2">
-                <strong>Business Name:</strong> jianyu
               </p>
             </div>
           </section>
