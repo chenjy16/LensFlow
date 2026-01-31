@@ -229,13 +229,13 @@ export default function Home() {
                 </div>
               </div>
 
-              <div className="mt-6 flex justify-center lg:justify-start">
+              <div className="mt-6 flex flex-wrap items-center justify-center lg:justify-start gap-3">
                 <a
                   href="https://www.producthunt.com/products/lensflowpro/reviews/new?utm_source=badge-product_review&utm_medium=badge&utm_campaign=badge-lensflowpro"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-block rounded-xl border border-slate-200/80 dark:border-white/10 bg-white/80 dark:bg-white/5 p-1.5 shadow-sm transition-opacity hover:opacity-90"
-                  aria-label="LensFlowPro on Product Hunt"
+                  aria-label="LensFlowPro on Product Hunt - Reviews"
                 >
                   <img
                     src="https://api.producthunt.com/widgets/embed-image/v1/product_review.svg?product_id=1146122&theme=light"
@@ -243,6 +243,21 @@ export default function Home() {
                     width={250}
                     height={54}
                     className="h-[54px] w-[250px] rounded-lg dark:opacity-95"
+                  />
+                </a>
+                <a
+                  href="https://www.producthunt.com/products/lensflowpro?utm_source=badge-follow&utm_medium=badge&utm_campaign=badge-lensflowpro"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block rounded-xl border border-slate-200/80 dark:border-white/10 bg-white/80 dark:bg-white/5 p-1.5 shadow-sm transition-opacity hover:opacity-90"
+                  aria-label="Follow LensFlowPro on Product Hunt"
+                >
+                  <img
+                    src="https://api.producthunt.com/widgets/embed-image/v1/follow.svg?product_id=1146122&theme=light&size=small"
+                    alt="Follow LensFlowPro on Product Hunt"
+                    width={86}
+                    height={32}
+                    className="h-8 w-[86px] rounded-lg dark:opacity-95"
                   />
                 </a>
               </div>
