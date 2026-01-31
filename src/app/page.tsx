@@ -228,6 +228,24 @@ export default function Home() {
                   <span className="text-slate-700 dark:text-slate-300">Smart Camera</span>
                 </div>
               </div>
+
+              <div className="mt-6 flex justify-center lg:justify-start">
+                <a
+                  href="https://www.producthunt.com/products/lensflowpro/reviews/new?utm_source=badge-product_review&utm_medium=badge&utm_campaign=badge-lensflowpro"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block rounded-xl border border-slate-200/80 dark:border-white/10 bg-white/80 dark:bg-white/5 p-1.5 shadow-sm transition-opacity hover:opacity-90"
+                  aria-label="LensFlowPro on Product Hunt"
+                >
+                  <img
+                    src="https://api.producthunt.com/widgets/embed-image/v1/product_review.svg?product_id=1146122&theme=light"
+                    alt="LensFlowPro on Product Hunt"
+                    width={250}
+                    height={54}
+                    className="h-[54px] w-[250px] rounded-lg dark:opacity-95"
+                  />
+                </a>
+              </div>
             </div>
 
             <div className="mt-12 lg:mt-0">
@@ -879,6 +897,14 @@ export default function Home() {
               >
                 Terms of Service
               </Link>
+              <a
+                href="https://www.producthunt.com/products/lensflowpro/reviews/new?utm_source=badge-product_review&utm_medium=badge&utm_campaign=badge-lensflowpro"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-white transition-colors"
+              >
+                Product Hunt
+              </a>
             </div>
             <p className="text-slate-500 text-xs mt-6 max-w-2xl mx-auto">
               Purchases are processed by Apple through In-App Purchase.
