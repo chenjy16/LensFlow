@@ -165,32 +165,47 @@ export default function Home() {
       </nav>
 
       {/* Hero Section */}
-      <section className="pt-32 pb-24 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto">
+      <section className="relative overflow-hidden pt-32 pb-28 px-4 sm:px-6 lg:px-8">
+        <div className="absolute inset-0 pointer-events-none">
+          <div className="absolute -top-24 -right-16 h-72 w-72 rounded-full bg-gradient-to-br from-blue-200/70 to-indigo-300/50 blur-3xl" />
+          <div className="absolute -bottom-20 -left-10 h-64 w-64 rounded-full bg-gradient-to-tr from-sky-200/60 to-purple-200/50 blur-3xl" />
+        </div>
+        <div className="relative max-w-7xl mx-auto">
           <div className="lg:grid lg:grid-cols-2 lg:gap-16 lg:items-center">
             <div className="text-center lg:text-left">
+              <span className="inline-flex items-center gap-2 px-4 py-2 mb-6 rounded-full bg-white/80 dark:bg-white/5 border border-slate-200/80 dark:border-white/10 text-sm font-medium text-slate-700 dark:text-slate-100 shadow-sm">
+                <span className="h-2 w-2 rounded-full bg-green-500" aria-hidden />
+                macOS-first recording suite
+              </span>
+
               <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-slate-900 dark:text-white mb-6 leading-tight tracking-tight">
                 Record Your Mac
-                <span className="text-blue-600 dark:text-blue-400">
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-indigo-500 to-purple-500">
                   {" "}
                   Like a Pro
                 </span>
               </h1>
 
-              <p className="text-xl text-slate-600 dark:text-slate-300 mb-8 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
-                Professional screen recording for Mac. Built for creators, developers, and educators.
+              <p className="text-xl text-slate-600 dark:text-slate-300 mb-10 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
+                Professional screen recording for Mac with cinematic Smart Camera, multi-track audio, and privacy-first controls.
               </p>
 
-              <div className="flex flex-col items-center lg:items-start gap-4 justify-center lg:justify-start mb-8">
+              <div className="flex flex-col sm:flex-row items-center lg:items-start gap-4 justify-center lg:justify-start mb-10">
                 <a
                   href="https://apps.apple.com/us/app/lensflowpro/id6757075353?mt=12"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-full font-semibold transition-colors inline-flex items-center gap-2 w-fit"
+                  className="bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-500 hover:to-indigo-500 text-white px-9 py-3.5 rounded-full font-semibold transition-all inline-flex items-center gap-2 shadow-lg shadow-blue-500/20"
                 >
-                  LensFlowPro
+                  Get LensFlowPro
                   <ArrowRight className="h-5 w-5" />
                 </a>
+                <Link
+                  href="/legal/release-notes"
+                  className="text-slate-700 dark:text-slate-200 px-6 py-3 rounded-full border border-slate-200 dark:border-white/15 hover:bg-white/70 dark:hover:bg-white/10 transition-colors font-medium"
+                >
+                  View Release Notes
+                </Link>
               </div>
 
               <div className="flex flex-wrap justify-center lg:justify-start gap-4 text-sm">
@@ -210,14 +225,17 @@ export default function Home() {
             </div>
 
             <div className="mt-12 lg:mt-0">
-              <Image
-                src="/Screenshot-2025-12-30-at-22-04-32-1.png"
-                alt="LensFlowPro user interface showing screen recording controls and camera overlay"
-                width={1200}
-                height={700}
-                className="w-full rounded-2xl shadow-2xl border border-slate-200 dark:border-slate-700"
-                priority
-              />
+              <div className="relative rounded-[28px] bg-gradient-to-br from-white to-slate-100 dark:from-slate-900 dark:to-slate-800 p-2 shadow-[0_30px_80px_rgba(15,23,42,0.2)]">
+                <div className="absolute inset-x-8 -top-6 h-12 bg-gradient-to-r from-blue-500/50 to-purple-500/40 blur-2xl opacity-70" aria-hidden />
+                <Image
+                  src="/Screenshot-2025-12-30-at-22-04-32-1.png"
+                  alt="LensFlowPro user interface showing screen recording controls and camera overlay"
+                  width={1200}
+                  height={700}
+                  className="w-full rounded-3xl border border-white/60 dark:border-white/10"
+                  priority
+                />
+              </div>
             </div>
           </div>
         </div>
@@ -225,9 +243,10 @@ export default function Home() {
 
       <section
         id="features"
-        className="py-24 px-4 sm:px-6 lg:px-8 bg-white dark:bg-slate-900"
+        className="relative py-24 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-white via-slate-50 to-white dark:from-slate-900 dark:via-slate-900 dark:to-slate-950"
       >
-        <div className="max-w-7xl mx-auto">
+        <div className="absolute inset-x-0 top-0 h-48 bg-gradient-to-b from-blue-100/30 to-transparent dark:from-blue-900/20 pointer-events-none" />
+        <div className="relative max-w-7xl mx-auto">
           <div className="text-center mb-20">
             <h2 className="text-4xl sm:text-5xl font-bold text-slate-900 dark:text-white mb-4">
               Key Features
@@ -238,7 +257,7 @@ export default function Home() {
           </div>
 
           <div className="grid md:grid-cols-2 gap-8 mb-16">
-            <div className="bg-white dark:bg-slate-900 p-8 rounded-2xl border border-slate-200 dark:border-slate-700 shadow-sm">
+            <div className="bg-white/90 dark:bg-white/5 backdrop-blur-xl p-8 rounded-3xl border border-white/60 dark:border-white/10 shadow-[0_20px_60px_rgba(15,23,42,0.08)]">
               <div className="flex items-center gap-3 mb-4">
                 <Shield className="h-7 w-7 text-blue-600" />
                 <h3 className="text-xl font-semibold text-slate-900 dark:text-white">
@@ -270,7 +289,7 @@ export default function Home() {
               </ul>
             </div>
 
-            <div className="bg-white dark:bg-slate-900 p-8 rounded-2xl border border-slate-200 dark:border-slate-700 shadow-sm">
+            <div className="bg-white/90 dark:bg-white/5 backdrop-blur-xl p-8 rounded-3xl border border-white/60 dark:border-white/10 shadow-[0_20px_60px_rgba(15,23,42,0.08)]">
               <div className="flex items-center gap-3 mb-4">
                 <Video className="h-7 w-7 text-blue-600" />
                 <h3 className="text-xl font-semibold text-slate-900 dark:text-white">
@@ -308,7 +327,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="bg-white dark:bg-slate-900 p-8 rounded-2xl border border-slate-200 dark:border-slate-700 shadow-sm">
+            <div className="bg-white/90 dark:bg-white/5 backdrop-blur-xl p-8 rounded-3xl border border-white/60 dark:border-white/10 shadow-[0_20px_60px_rgba(15,23,42,0.08)]">
               <div className="flex items-center gap-3 mb-4">
                 <Maximize2 className="h-7 w-7 text-blue-600" />
                 <h3 className="text-xl font-semibold text-slate-900 dark:text-white">
@@ -337,7 +356,7 @@ export default function Home() {
               </ul>
             </div>
 
-            <div className="bg-white dark:bg-slate-900 p-8 rounded-2xl border border-slate-200 dark:border-slate-700 shadow-sm">
+            <div className="bg-white/90 dark:bg-white/5 backdrop-blur-xl p-8 rounded-3xl border border-white/60 dark:border-white/10 shadow-[0_20px_60px_rgba(15,23,42,0.08)]">
               <div className="flex items-center gap-3 mb-4">
                 <Headphones className="h-7 w-7 text-blue-600" />
                 <h3 className="text-xl font-semibold text-slate-900 dark:text-white">
@@ -377,7 +396,7 @@ export default function Home() {
 
           <div
             id="smart-camera"
-            className="mb-12 bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-700 p-8"
+            className="mb-12 bg-white/95 dark:bg-white/5 backdrop-blur-xl rounded-3xl border border-white/60 dark:border-white/10 p-8 shadow-[0_25px_70px_rgba(15,23,42,0.12)]"
           >
             <div className="flex items-start gap-3 mb-6">
               <Video className="h-7 w-7 text-blue-600 mt-1" />
@@ -1083,6 +1102,12 @@ export default function Home() {
                 className="hover:text-white transition-colors"
               >
                 Refund Policy
+              </Link>
+              <Link
+                href="/legal/release-notes"
+                className="hover:text-white transition-colors"
+              >
+                Release Notes
               </Link>
               <Link
                 href="/legal/terms-of-service"
