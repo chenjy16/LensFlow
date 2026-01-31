@@ -82,6 +82,12 @@ export default function Home() {
         "Visualize clicks (different colors for left/right/middle)",
     },
     {
+      category: "Effects",
+      feature: "Smart Cursor Smoothing",
+      description:
+        "Path redraw engine eliminates jitter so recorded cursors glide like a dolly shot",
+    },
+    {
       category: "Smart Camera",
       feature: "Metadata Recording",
       description: "Capture mouse events during screen recording for cinematic playback",
@@ -247,246 +253,96 @@ export default function Home() {
       >
         <div className="absolute inset-x-0 top-0 h-48 bg-gradient-to-b from-blue-100/30 to-transparent dark:from-blue-900/20 pointer-events-none" />
         <div className="relative max-w-7xl mx-auto">
-          <div className="text-center mb-20">
+          <div className="text-center mb-12">
             <h2 className="text-4xl sm:text-5xl font-bold text-slate-900 dark:text-white mb-4">
-              Key Features
+              Key Features &amp; Advantages
             </h2>
             <p className="text-xl text-slate-600 dark:text-slate-300 max-w-2xl mx-auto">
-              Professional-grade tools for modern creators
+              Professional tools for creators—cinematic export, smooth cursor, and flexible recording.
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8 mb-16">
-            <div className="bg-white/90 dark:bg-white/5 backdrop-blur-xl p-8 rounded-3xl border border-white/60 dark:border-white/10 shadow-[0_20px_60px_rgba(15,23,42,0.08)]">
-              <div className="flex items-center gap-3 mb-4">
+          <div className="grid md:grid-cols-2 gap-8 mb-10">
+            <div className="bg-white/90 dark:bg-white/5 backdrop-blur-xl p-6 rounded-3xl border border-white/60 dark:border-white/10 shadow-[0_20px_60px_rgba(15,23,42,0.08)]">
+              <div className="flex items-center gap-3 mb-3">
                 <Shield className="h-7 w-7 text-blue-600" />
                 <h3 className="text-xl font-semibold text-slate-900 dark:text-white">
                   App Blocklist
                 </h3>
               </div>
-              <p className="text-slate-600 dark:text-slate-300 mb-4">
-                Perfect for AI-assisted content creators.
+              <p className="text-slate-600 dark:text-slate-300 text-sm mb-3">
+                Block AI assistants from recordings; keep prompts private while sharing your workflow.
               </p>
-              <ul className="space-y-2 text-sm text-slate-600 dark:text-slate-300">
-                <li className="flex items-start gap-2">
-                  <CheckCircle className="h-4 w-4 text-green-500 mt-0.5" />
-                  <span>
-                    Block ChatGPT, Claude, or any AI assistant from your
-                    recordings
-                  </span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <CheckCircle className="h-4 w-4 text-green-500 mt-0.5" />
-                  <span>Keep your prompts private while sharing your workflow</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <CheckCircle className="h-4 w-4 text-green-500 mt-0.5" />
-                  <span>
-                    Ideal for tutorial creators who use AI but don’t want to
-                    reveal their prompts
-                  </span>
-                </li>
-              </ul>
             </div>
 
-            <div className="bg-white/90 dark:bg-white/5 backdrop-blur-xl p-8 rounded-3xl border border-white/60 dark:border-white/10 shadow-[0_20px_60px_rgba(15,23,42,0.08)]">
-              <div className="flex items-center gap-3 mb-4">
+            <div className="bg-white/90 dark:bg-white/5 backdrop-blur-xl p-6 rounded-3xl border border-white/60 dark:border-white/10 shadow-[0_20px_60px_rgba(15,23,42,0.08)]">
+              <div className="flex items-center gap-3 mb-3">
                 <Video className="h-7 w-7 text-blue-600" />
                 <h3 className="text-xl font-semibold text-slate-900 dark:text-white">
                   Smart Camera
                 </h3>
               </div>
-              <p className="text-slate-600 dark:text-slate-300 mb-4">
-                Create professional, cinematic-style screen recordings automatically.
+              <p className="text-slate-600 dark:text-slate-300 text-sm mb-3">
+                Cinematic export: keyframe editing, auto-analysis from mouse behavior, smart merge. Deterministic, frame-reproducible output.
               </p>
-              <ul className="space-y-2 text-sm text-slate-600 dark:text-slate-300">
-                <li className="flex items-start gap-2">
-                  <CheckCircle className="h-4 w-4 text-green-500 mt-0.5" />
-                  <span>Metadata Recording - Capture mouse events for playback</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <CheckCircle className="h-4 w-4 text-green-500 mt-0.5" />
-                  <span>Manual Keyframe Editing - Full control over the timeline</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <CheckCircle className="h-4 w-4 text-green-500 mt-0.5" />
-                  <span>Auto-Analysis - Smart camera movements from mouse behavior</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <CheckCircle className="h-4 w-4 text-green-500 mt-0.5" />
-                  <span>Smart Merge - Blend manual and auto keyframes seamlessly</span>
-                </li>
-              </ul>
-              <div className="mt-6">
-                <a
-                  href="#smart-camera"
-                  className="text-sm font-medium text-blue-600 dark:text-blue-400 hover:underline"
-                >
-                  Learn more about Smart Camera
-                </a>
-              </div>
             </div>
 
-            <div className="bg-white/90 dark:bg-white/5 backdrop-blur-xl p-8 rounded-3xl border border-white/60 dark:border-white/10 shadow-[0_20px_60px_rgba(15,23,42,0.08)]">
-              <div className="flex items-center gap-3 mb-4">
+            <div className="bg-white/90 dark:bg-white/5 backdrop-blur-xl p-6 rounded-3xl border border-white/60 dark:border-white/10 shadow-[0_20px_60px_rgba(15,23,42,0.08)]">
+              <div className="flex items-center gap-3 mb-3">
                 <Maximize2 className="h-7 w-7 text-blue-600" />
                 <h3 className="text-xl font-semibold text-slate-900 dark:text-white">
-                  Real-Time Screen Magnifier
+                  Screen Magnifier
                 </h3>
               </div>
-              <p className="text-slate-600 dark:text-slate-300 mb-4">
-                The only screen recorder with built-in magnification.
+              <p className="text-slate-600 dark:text-slate-300 text-sm mb-3">
+                Zoom 1.0×–3.0× while recording (Option + Scroll). Built-in magnification for code reviews and demos.
               </p>
-              <ul className="space-y-2 text-sm text-slate-600 dark:text-slate-300">
-                <li className="flex items-start gap-2">
-                  <CheckCircle className="h-4 w-4 text-green-500 mt-0.5" />
-                  <span>Zoom 1.0× to 3.0× while recording</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <CheckCircle className="h-4 w-4 text-green-500 mt-0.5" />
-                  <span>Option + Scroll to adjust zoom level</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <CheckCircle className="h-4 w-4 text-green-500 mt-0.5" />
-                  <span>
-                    Perfect for code reviews, design critiques, and detailed
-                    demos
-                  </span>
-                </li>
-              </ul>
             </div>
 
-            <div className="bg-white/90 dark:bg-white/5 backdrop-blur-xl p-8 rounded-3xl border border-white/60 dark:border-white/10 shadow-[0_20px_60px_rgba(15,23,42,0.08)]">
-              <div className="flex items-center gap-3 mb-4">
+            <div className="bg-white/90 dark:bg-white/5 backdrop-blur-xl p-6 rounded-3xl border border-white/60 dark:border-white/10 shadow-[0_20px_60px_rgba(15,23,42,0.08)]">
+              <div className="flex items-center gap-3 mb-3">
                 <Headphones className="h-7 w-7 text-blue-600" />
                 <h3 className="text-xl font-semibold text-slate-900 dark:text-white">
-                  True Multi-Track Audio
+                  Multi-Track Audio
                 </h3>
               </div>
-              <p className="text-slate-600 dark:text-slate-300 mb-4">
-                Professional audio separation for post-production.
+              <p className="text-slate-600 dark:text-slate-300 text-sm mb-3">
+                System audio and mic as separate tracks; AEC for clear voiceovers. Mix or export separately in post.
               </p>
-              <ul className="space-y-2 text-sm text-slate-600 dark:text-slate-300">
-                <li className="flex items-start gap-2">
-                  <CheckCircle className="h-4 w-4 text-green-500 mt-0.5" />
-                  <span>System audio and microphone as separate tracks</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <CheckCircle className="h-4 w-4 text-green-500 mt-0.5" />
-                  <span>Mix in post-production or export separately</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <CheckCircle className="h-4 w-4 text-green-500 mt-0.5" />
-                  <span>
-                    Acoustic Echo Cancellation for crystal-clear voiceovers
-                  </span>
-                </li>
-              </ul>
             </div>
           </div>
 
-          <div className="text-center mb-8">
-            <h3 className="text-2xl font-semibold text-slate-900 dark:text-white">
+          <div id="advantages" className="mb-12 bg-slate-50 dark:bg-slate-800/60 rounded-2xl border border-slate-200 dark:border-slate-700 p-6">
+            <h3 className="text-lg font-semibold text-slate-900 dark:text-white mb-4 text-center">
+              Why LensFlowPro
+            </h3>
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4 text-sm text-slate-600 dark:text-slate-300">
+              <div className="flex items-start gap-2">
+                <Monitor className="h-5 w-5 text-blue-600 mt-0.5 flex-shrink-0" />
+                <span><strong>Flexible recording:</strong> Full desktop, app, or window.</span>
+              </div>
+              <div className="flex items-start gap-2">
+                <Volume2 className="h-5 w-5 text-blue-600 mt-0.5 flex-shrink-0" />
+                <span><strong>Clear audio &amp; visuals:</strong> System audio + mic, high-quality encoding.</span>
+              </div>
+              <div className="flex items-start gap-2">
+                <Video className="h-5 w-5 text-blue-600 mt-0.5 flex-shrink-0" />
+                <span><strong>Smart Cursor Smoothing:</strong> Path redraw engine—cursor glides like a dolly shot.</span>
+              </div>
+              <div className="flex items-start gap-2">
+                <User className="h-5 w-5 text-blue-600 mt-0.5 flex-shrink-0" />
+                <span><strong>Presenter Overlay:</strong> macOS 14+; PiP on earlier versions.</span>
+              </div>
+            </div>
+          </div>
+
+          <div className="text-center mb-6">
+            <h3 className="text-xl font-semibold text-slate-900 dark:text-white">
               Full Feature List
             </h3>
-            <p className="mt-3 text-sm text-slate-600 dark:text-slate-300 max-w-3xl mx-auto">
+            <p className="mt-2 text-sm text-slate-600 dark:text-slate-300 max-w-3xl mx-auto">
               Detailed breakdown by category.
             </p>
-          </div>
-
-          <div
-            id="smart-camera"
-            className="mb-12 bg-white/95 dark:bg-white/5 backdrop-blur-xl rounded-3xl border border-white/60 dark:border-white/10 p-8 shadow-[0_25px_70px_rgba(15,23,42,0.12)]"
-          >
-            <div className="flex items-start gap-3 mb-6">
-              <Video className="h-7 w-7 text-blue-600 mt-1" />
-              <div>
-                <h3 className="text-2xl font-semibold text-slate-900 dark:text-white">
-                  Smart Camera – Intelligent Cinematic Export
-                </h3>
-                <p className="mt-2 text-slate-600 dark:text-slate-300">
-                  Turn your screen recordings into professional cinematic videos with our intelligent camera system.
-                </p>
-              </div>
-            </div>
-
-            <div className="grid md:grid-cols-2 gap-6">
-              <div className="bg-slate-50 dark:bg-slate-800/60 rounded-xl border border-slate-200 dark:border-slate-700 p-6">
-                <h4 className="text-lg font-semibold text-slate-900 dark:text-white mb-4">
-                  Cinematic Control
-                </h4>
-                <ul className="space-y-3 text-sm text-slate-600 dark:text-slate-300">
-                  <li className="flex items-start gap-2">
-                    <CheckCircle className="h-4 w-4 text-green-500 mt-0.5" />
-                    <span>
-                      <strong>Manual Keyframe Editing:</strong> Add, edit, or delete camera keyframes on the timeline for complete creative control.
-                    </span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle className="h-4 w-4 text-green-500 mt-0.5" />
-                    <span>
-                      <strong>Timeline Preview:</strong> Real-time preview with smooth interpolation between keyframes.
-                    </span>
-                  </li>
-                </ul>
-              </div>
-
-              <div className="bg-slate-50 dark:bg-slate-800/60 rounded-xl border border-slate-200 dark:border-slate-700 p-6">
-                <h4 className="text-lg font-semibold text-slate-900 dark:text-white mb-4">
-                  Intelligent Analysis
-                </h4>
-                <ul className="space-y-3 text-sm text-slate-600 dark:text-slate-300">
-                  <li className="flex items-start gap-2">
-                    <CheckCircle className="h-4 w-4 text-green-500 mt-0.5" />
-                    <span>
-                      <strong>Auto-Analysis:</strong> Automatically generate smooth camera movements based on recorded mouse behavior.
-                    </span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle className="h-4 w-4 text-green-500 mt-0.5" />
-                    <span>
-                      <strong>Smart Merge:</strong> Manual keyframes take priority; auto keyframes intelligently fill the gaps.
-                    </span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            <div className="mt-6 grid md:grid-cols-2 gap-6">
-              <div className="bg-slate-50 dark:bg-slate-800/60 rounded-xl border border-slate-200 dark:border-slate-700 p-6">
-                <h4 className="text-lg font-semibold text-slate-900 dark:text-white mb-4">
-                  Precision Export
-                </h4>
-                <ul className="space-y-3 text-sm text-slate-600 dark:text-slate-300">
-                  <li className="flex items-start gap-2">
-                    <CheckCircle className="h-4 w-4 text-green-500 mt-0.5" />
-                    <span>
-                      <strong>Deterministic Export:</strong> Same input always produces the same output, ensuring frame-reproducible results.
-                    </span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle className="h-4 w-4 text-green-500 mt-0.5" />
-                    <span>
-                      <strong>Export Validation:</strong> Pre-export checks prevent invalid outputs and ensure high-quality renders.
-                    </span>
-                  </li>
-                </ul>
-              </div>
-
-              <div className="bg-slate-50 dark:bg-slate-800/60 rounded-xl border border-slate-200 dark:border-slate-700 p-6">
-                <h4 className="text-lg font-semibold text-slate-900 dark:text-white mb-4">
-                  Metadata Capture
-                </h4>
-                <ul className="space-y-3 text-sm text-slate-600 dark:text-slate-300">
-                  <li className="flex items-start gap-2">
-                    <CheckCircle className="h-4 w-4 text-green-500 mt-0.5" />
-                    <span>
-                      <strong>Metadata Recording:</strong> Capture raw mouse events during recording for high-fidelity reconstruction during export.
-                    </span>
-                  </li>
-                </ul>
-              </div>
-            </div>
           </div>
 
           <div className="bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-700 overflow-hidden">
@@ -578,98 +434,6 @@ export default function Home() {
               <p className="text-slate-600 dark:text-slate-300">
                 Async messages, screen shares
               </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Key Advantages Section */}
-      <section
-        id="advantages"
-        className="py-20 px-4 sm:px-6 lg:px-8 bg-slate-50 dark:bg-slate-800"
-      >
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-slate-900 dark:text-white mb-4">
-              Key
-              <span className="text-blue-600 dark:text-blue-400">
-                {" "}
-                Advantages
-              </span>
-            </h2>
-          </div>
-
-          <div className="space-y-12">
-            <div className="text-center">
-              <h3 className="text-2xl font-semibold text-slate-900 dark:text-white mb-6">
-                1. Flexible recording for different scenarios
-              </h3>
-              <div className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
-                <div className="bg-white dark:bg-slate-900 p-6 rounded-xl">
-                  <Monitor className="h-8 w-8 text-blue-600 mx-auto mb-4" />
-                  <h4 className="font-semibold mb-2">Entire Desktop</h4>
-                  <p className="text-slate-600 dark:text-slate-300 text-sm">
-                    Record the full desktop or specific display
-                  </p>
-                </div>
-                <div className="bg-white dark:bg-slate-900 p-6 rounded-xl">
-                  <Camera className="h-8 w-8 text-green-600 mx-auto mb-4" />
-                  <h4 className="font-semibold mb-2">App-Specific</h4>
-                  <p className="text-slate-600 dark:text-slate-300 text-sm">
-                    Record only a particular app window
-                  </p>
-                </div>
-                <div className="bg-white dark:bg-slate-900 p-6 rounded-xl">
-                  <Settings className="h-8 w-8 text-purple-600 mx-auto mb-4" />
-                  <h4 className="font-semibold mb-2">Precise Control</h4>
-                  <p className="text-slate-600 dark:text-slate-300 text-sm">
-                    Control exactly what gets recorded
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div className="text-center">
-              <h3 className="text-2xl font-semibold text-slate-900 dark:text-white mb-6">
-                2. Clear visuals and high-quality audio
-              </h3>
-              <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
-                <div className="bg-white dark:bg-slate-900 p-6 rounded-xl">
-                  <Volume2 className="h-8 w-8 text-blue-600 mx-auto mb-4" />
-                  <h4 className="font-semibold mb-2">System Audio</h4>
-                  <p className="text-slate-600 dark:text-slate-300 text-sm">
-                    Supports system audio recording (app sounds, video audio,
-                    etc.)
-                  </p>
-                </div>
-                <div className="bg-white dark:bg-slate-900 p-6 rounded-xl">
-                  <Mic className="h-8 w-8 text-green-600 mx-auto mb-4" />
-                  <h4 className="font-semibold mb-2">Microphone Recording</h4>
-                  <p className="text-slate-600 dark:text-slate-300 text-sm">
-                    Ideal for speaking while operating, can record both
-                    simultaneously
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div className="text-center">
-              <h3 className="text-2xl font-semibold text-slate-900 dark:text-white mb-6">
-                3. Presenter Overlay / Picture-in-picture narration
-              </h3>
-              <div className="bg-white dark:bg-slate-900 p-8 rounded-xl max-w-2xl mx-auto">
-                <User className="h-12 w-12 text-blue-600 mx-auto mb-4" />
-                <p className="text-slate-600 dark:text-slate-300 mb-4">
-                  On macOS 14+, LensFlowPro supports Apple&apos;s Presenter Overlay
-                  feature for professional narration. Your camera feed appears
-                  naturally on screen without blocking key content.
-                </p>
-                <div className="bg-blue-50 dark:bg-blue-900/20 p-4 rounded-lg text-sm text-slate-600 dark:text-slate-300">
-                  <strong>System Requirements:</strong> macOS 14.0 or later for
-                  Presenter Overlay. Classic picture-in-picture mode available
-                  on earlier versions.
-                </div>
-              </div>
             </div>
           </div>
         </div>
