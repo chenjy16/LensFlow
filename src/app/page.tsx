@@ -181,14 +181,14 @@ export default function Home() {
                 Professional screen recording for Mac. Built for creators, developers, and educators.
               </p>
 
-              <div className="flex flex-col gap-4 justify-center lg:justify-start mb-8">
+              <div className="flex flex-col items-center lg:items-start gap-4 justify-center lg:justify-start mb-8">
                 <a
                   href="https://apps.apple.com/us/app/lensflowpro/id6757075353?mt=12"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-full font-semibold transition-colors inline-block"
+                  className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-full font-semibold transition-colors inline-flex items-center gap-2 w-fit"
                 >
-                  Get LensFlowPro
+                  LensFlowPro
                   <ArrowRight className="h-5 w-5" />
                 </a>
               </div>
