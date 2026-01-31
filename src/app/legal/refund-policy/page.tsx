@@ -54,11 +54,10 @@ export default function RefundPolicy() {
 
           <section className="bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-700 p-8 mb-8 shadow-sm">
             <h2 className="text-2xl font-bold text-slate-900 dark:text-white mb-4">
-              30-Day Money-Back Guarantee
+              Refunds for In-App Purchases
             </h2>
             <p className="text-slate-700 dark:text-slate-300 mb-4 text-lg">
-              We offer a <strong>30-day money-back guarantee</strong>. If you are not satisfied with 
-              LensFlowPro for any reason, you can request a full refund within 30 days of your purchase.
+              Purchases are processed by Apple through In-App Purchase. Refund eligibility and processing are handled by Apple.
             </p>
           </section>
 
@@ -67,18 +66,10 @@ export default function RefundPolicy() {
               How to Request a Refund
             </h2>
             <p className="text-slate-700 dark:text-slate-300 mb-4">
-              To request a refund, please contact us at:
+              To request a refund, please use Apple's refund request process.
             </p>
-            <div className="bg-blue-50 dark:bg-blue-900/20 p-4 rounded-lg mb-4">
-              <p className="text-slate-700 dark:text-slate-300">
-                <strong>Email:</strong>{" "}
-                <a href="mailto:chenjianyu944@gmail.com" className="text-blue-600 hover:underline font-medium">
-                  chenjianyu944@gmail.com
-                </a>
-              </p>
-            </div>
             <p className="text-slate-700 dark:text-slate-300 text-sm">
-              Please include your order number or transaction ID in your refund request.
+              You can view your purchase history and request a refund in your Apple ID purchase history.
             </p>
           </section>
 
@@ -87,8 +78,7 @@ export default function RefundPolicy() {
               Refund Processing
             </h2>
             <p className="text-slate-700 dark:text-slate-300 mb-4">
-              Refunds will be issued to your original payment method. Processing times may vary 
-              depending on your payment provider.
+              Apple determines refund eligibility and processes refunds to the payment method associated with your Apple ID.
             </p>
           </section>
 

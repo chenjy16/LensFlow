@@ -54,7 +54,7 @@ export default function PrivacyPolicy() {
 
                <div>
                 <h3 className="text-xl font-semibold text-slate-900 dark:text-white mb-3">Payment Processor</h3>
-                <p className="text-sm mb-2">LensFlowPro payments are processed by Paddle. We do not store full payment card information on our servers. Paddle acts as our Merchant of Record.</p>
+                <p className="text-sm mb-2">Purchases are processed by Apple through In-App Purchase. We do not receive or store full payment card information.</p>
               </div>
 
               <div>
@@ -89,7 +89,17 @@ export default function PrivacyPolicy() {
               <Cookie className="h-8 w-8 text-orange-600" />
               <h2 className="text-3xl font-bold text-slate-900 dark:text-white">Cookie Policy</h2>
             </div>
-            <p className="text-slate-700 dark:text-slate-300">Cookie details go here (brief placeholder).</p>
+            <div className="space-y-4 text-slate-700 dark:text-slate-300">
+              <p>
+                This website may use cookies and similar technologies to operate reliably.
+              </p>
+              <p>
+                We do not use cookies to record screen content or keystrokes, and we do not sell your personal data.
+              </p>
+              <p>
+                You can manage cookies through your browser settings. Disabling cookies may affect parts of the site.
+              </p>
+            </div>
           </section>
         </div>
       </div>

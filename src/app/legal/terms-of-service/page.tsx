@@ -109,7 +109,7 @@ export default function TermsOfService() {
             <p className="text-slate-700 dark:text-slate-300 mb-4">
               In no event shall LensFlowPro or its licensors be liable for any indirect, incidental, special,
               or consequential damages resulting from the use of LensFlowPro, even if advised of the possibility
-              of such damages. The total liability shall not exceed the amount paid for the license, if any.
+              of such damages.
             </p>
           </section>
 
@@ -135,10 +135,10 @@ export default function TermsOfService() {
           <section className="bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-700 p-8 shadow-sm">
             <h2 className="text-2xl font-bold text-slate-900 dark:text-white mb-4">12. Payment & Billing</h2>
             <p className="text-slate-700 dark:text-slate-300 mb-4">
-              LensFlowPro payments are processed by Paddle. We do not store full payment card information on our servers. The terms of the payment processor apply.
+              Purchases are processed by Apple through In-App Purchase.
             </p>
             <p className="text-slate-700 dark:text-slate-300 mb-0">
-              Paddle acts as our Merchant of Record for all transactions.
+              You can manage your purchase history and billing settings in your Apple ID account.
             </p>
           </section>
         </div>

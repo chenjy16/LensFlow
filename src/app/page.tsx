@@ -183,20 +183,14 @@ export default function Home() {
 
               <div className="flex flex-col gap-4 justify-center lg:justify-start mb-8">
                 <a
-                  href="https://dl.lensflowpro.qzz.io/LensFlowPro-2.1.0.dmg"
+                  href="https://apps.apple.com/us/app/lensflowpro/id6757075353?mt=12"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-full font-semibold text-lg transition-all inline-flex items-center justify-center gap-2 shadow-lg hover:shadow-xl hover:scale-105"
+                  className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-full font-semibold transition-colors inline-block"
                 >
-                  Download Now
+                  Get LensFlowPro
                   <ArrowRight className="h-5 w-5" />
                 </a>
-                <p className="text-slate-500 dark:text-slate-400 text-sm text-center lg:text-left">
-                  One-time purchase • $29.99
-                </p>
-                <p className="text-slate-400 dark:text-slate-500 text-xs text-center lg:text-left">
-                  Secure payment processed by Paddle
-                </p>
               </div>
 
               <div className="flex flex-wrap justify-center lg:justify-start gap-4 text-sm">
@@ -1098,7 +1092,7 @@ export default function Home() {
               </Link>
             </div>
             <p className="text-slate-500 text-xs mt-6 max-w-2xl mx-auto">
-              Payments are securely processed by Paddle as our merchant of record.
+              Purchases are processed by Apple through In-App Purchase.
             </p>
             <p className="text-slate-500 text-sm mt-4">
               &copy; 2025 LensFlowPro. All rights reserved.
