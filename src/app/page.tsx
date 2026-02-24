@@ -148,12 +148,6 @@ export default function Home() {
                 Features
               </a>
               <a
-                href="#advantages"
-                className="text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-blue-600 transition-colors"
-              >
-                Why Us
-              </a>
-              <a
                 href="#requirements"
                 className="text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-blue-600 transition-colors"
               >
@@ -165,12 +159,20 @@ export default function Home() {
               >
                 Contact
               </a>
+              <a
+                href="https://www.creem.io/payment/prod_bi184SegyiXtwO6P2Kep1"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-sm font-semibold text-white bg-blue-600 hover:bg-blue-500 px-4 py-2 rounded-full transition-colors"
+              >
+                Buy Pro
+              </a>
             </div>
           </div>
         </div>
       </nav>
 
-      {/* Hero Section */}
+      {/* ① Hero Section — Value Core */}
       <section className="relative overflow-hidden pt-32 pb-28 px-4 sm:px-6 lg:px-8">
         <div className="absolute inset-0 pointer-events-none">
           <div className="absolute -top-24 -right-16 h-72 w-72 rounded-full bg-gradient-to-br from-blue-200/70 to-indigo-300/50 blur-3xl" />
@@ -181,19 +183,23 @@ export default function Home() {
             <div className="text-center lg:text-left">
               <span className="inline-flex items-center gap-2 px-4 py-2 mb-6 rounded-full bg-white/80 dark:bg-white/5 border border-slate-200/80 dark:border-white/10 text-sm font-medium text-slate-700 dark:text-slate-100 shadow-sm">
                 <span className="h-2 w-2 rounded-full bg-green-500" aria-hidden />
-                macOS-first recording suite
+                Professional Output Upgrade
               </span>
 
               <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-slate-900 dark:text-white mb-6 leading-tight tracking-tight">
-                Record Your Mac
+                Unlock the Full Power of
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-indigo-500 to-purple-500">
                   {" "}
-                  Like a Pro
+                  LensFlowPro
                 </span>
               </h1>
 
-              <p className="text-xl text-slate-600 dark:text-slate-300 mb-10 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
-                Professional screen recording for Mac with cinematic Smart Camera, multi-track audio, and privacy-first controls.
+              <p className="text-xl text-slate-600 dark:text-slate-300 mb-4 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
+                Export in 4K and original resolution, enable ultra-smooth 60 &amp; 120 FPS output, and remove all watermarks — forever.
+              </p>
+
+              <p className="text-lg font-medium text-slate-800 dark:text-slate-100 mb-10 max-w-2xl mx-auto lg:mx-0">
+                One-time payment. Lifetime access. No subscriptions.
               </p>
 
               <div className="flex flex-col sm:flex-row items-center lg:items-start gap-4 justify-center lg:justify-start mb-10">
@@ -203,7 +209,7 @@ export default function Home() {
                   rel="noopener noreferrer"
                   className="bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-500 hover:to-indigo-500 text-white px-9 py-3.5 rounded-full font-semibold transition-all inline-flex items-center gap-2 shadow-lg shadow-blue-500/20"
                 >
-                  Buy License
+                  Buy Pro License
                   <ArrowRight className="h-5 w-5" />
                 </a>
                 <a
@@ -212,7 +218,7 @@ export default function Home() {
                   rel="noopener noreferrer"
                   className="text-slate-700 dark:text-slate-200 px-6 py-3 rounded-full border border-slate-200 dark:border-white/15 hover:bg-white/70 dark:hover:bg-white/10 transition-colors font-medium inline-flex items-center gap-2"
                 >
-                  Download DMG
+                  Download Free Version
                   <ArrowRight className="h-4 w-4" />
                 </a>
                 <Link
@@ -223,18 +229,18 @@ export default function Home() {
                 </Link>
               </div>
 
-              <div className="flex flex-wrap justify-center lg:justify-start gap-4 text-sm">
+              <div className="flex flex-wrap justify-center lg:justify-start gap-3 text-sm">
                 <div className="flex items-center gap-2 bg-white dark:bg-slate-800 px-4 py-2 rounded-full border border-slate-200 dark:border-slate-700">
                   <CheckCircle className="h-4 w-4 text-green-500" />
-                  <span className="text-slate-700 dark:text-slate-300">Native Performance</span>
+                  <span className="text-slate-700 dark:text-slate-300">One-time payment</span>
                 </div>
                 <div className="flex items-center gap-2 bg-white dark:bg-slate-800 px-4 py-2 rounded-full border border-slate-200 dark:border-slate-700">
                   <CheckCircle className="h-4 w-4 text-green-500" />
-                  <span className="text-slate-700 dark:text-slate-300">Multi-Track Audio</span>
+                  <span className="text-slate-700 dark:text-slate-300">Instant license delivery</span>
                 </div>
                 <div className="flex items-center gap-2 bg-white dark:bg-slate-800 px-4 py-2 rounded-full border border-slate-200 dark:border-slate-700">
                   <CheckCircle className="h-4 w-4 text-green-500" />
-                  <span className="text-slate-700 dark:text-slate-300">Smart Camera</span>
+                  <span className="text-slate-700 dark:text-slate-300">No recurring fees</span>
                 </div>
               </div>
 
@@ -283,6 +289,138 @@ export default function Home() {
                   className="w-full rounded-3xl border border-white/60 dark:border-white/10"
                   priority
                 />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ② Free vs Pro Comparison — Conversion Core */}
+      <section className="py-24 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-slate-50 to-white dark:from-slate-950 dark:to-slate-900">
+        <div className="max-w-5xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl sm:text-5xl font-bold text-slate-900 dark:text-white mb-4">
+              Free vs
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-500"> Pro</span>
+            </h2>
+            <p className="text-lg text-slate-600 dark:text-slate-300">
+              See exactly what you get when you upgrade.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-8">
+            <div className="bg-white dark:bg-slate-800 p-8 rounded-3xl border border-slate-200 dark:border-slate-700 shadow-sm">
+              <h3 className="text-2xl font-bold text-slate-900 dark:text-white mb-6">Free Version</h3>
+              <ul className="space-y-4 text-slate-600 dark:text-slate-300">
+                <li className="flex items-start gap-3">
+                  <span className="mt-1 h-5 w-5 rounded-full bg-slate-200 dark:bg-slate-700 flex items-center justify-center text-xs text-slate-500 dark:text-slate-400">—</span>
+                  <span>Standard resolution export</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="mt-1 h-5 w-5 rounded-full bg-slate-200 dark:bg-slate-700 flex items-center justify-center text-xs text-slate-500 dark:text-slate-400">—</span>
+                  <span>Watermarked output</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="mt-1 h-5 w-5 rounded-full bg-slate-200 dark:bg-slate-700 flex items-center justify-center text-xs text-slate-500 dark:text-slate-400">—</span>
+                  <span>Limited frame rate options</span>
+                </li>
+              </ul>
+            </div>
+
+            <div className="relative bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-blue-950/40 dark:to-indigo-950/40 p-8 rounded-3xl border-2 border-blue-500 dark:border-blue-400 shadow-lg shadow-blue-500/10">
+              <div className="absolute -top-4 left-8 bg-gradient-to-r from-blue-600 to-indigo-600 text-white text-xs font-bold px-4 py-1.5 rounded-full">
+                RECOMMENDED
+              </div>
+              <h3 className="text-2xl font-bold text-slate-900 dark:text-white mb-6">Pro Version Unlocks</h3>
+              <ul className="space-y-4 text-slate-700 dark:text-slate-200">
+                <li className="flex items-start gap-3">
+                  <CheckCircle className="h-5 w-5 text-blue-600 mt-0.5 flex-shrink-0" />
+                  <span>4K &amp; original resolution export</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <CheckCircle className="h-5 w-5 text-blue-600 mt-0.5 flex-shrink-0" />
+                  <span>60 FPS &amp; 120 FPS export</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <CheckCircle className="h-5 w-5 text-blue-600 mt-0.5 flex-shrink-0" />
+                  <span>Completely watermark-free exports</span>
+                </li>
+              </ul>
+              <div className="mt-8">
+                <a
+                  href="https://www.creem.io/payment/prod_bi184SegyiXtwO6P2Kep1"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-500 hover:to-indigo-500 text-white px-8 py-3.5 rounded-full font-semibold transition-all inline-flex items-center justify-center gap-2 shadow-lg shadow-blue-500/20"
+                >
+                  Upgrade to Pro
+                  <ArrowRight className="h-5 w-5" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ③ Pro Feature Details + ④ License Details */}
+      <section className="py-24 px-4 sm:px-6 lg:px-8 bg-white dark:bg-slate-900">
+        <div className="max-w-5xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-12">
+            <div>
+              <h2 className="text-3xl font-bold text-slate-900 dark:text-white mb-8">
+                With the Pro license, you get:
+              </h2>
+              <ul className="space-y-5 text-slate-700 dark:text-slate-200">
+                <li className="flex items-start gap-3">
+                  <CheckCircle className="h-5 w-5 text-green-500 mt-0.5 flex-shrink-0" />
+                  <span>Export in 4K and original resolution</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <CheckCircle className="h-5 w-5 text-green-500 mt-0.5 flex-shrink-0" />
+                  <span>Enable 60 FPS and 120 FPS output</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <CheckCircle className="h-5 w-5 text-green-500 mt-0.5 flex-shrink-0" />
+                  <span>Remove all watermarks</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <CheckCircle className="h-5 w-5 text-green-500 mt-0.5 flex-shrink-0" />
+                  <span>Activate on up to 3 devices</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <CheckCircle className="h-5 w-5 text-green-500 mt-0.5 flex-shrink-0" />
+                  <span>Free minor updates included</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <CheckCircle className="h-5 w-5 text-green-500 mt-0.5 flex-shrink-0" />
+                  <span>No subscription required</span>
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <h2 className="text-3xl font-bold text-slate-900 dark:text-white mb-8">
+                License Details
+              </h2>
+              <div className="bg-slate-50 dark:bg-slate-800 p-8 rounded-2xl border border-slate-200 dark:border-slate-700">
+                <ul className="space-y-5 text-slate-700 dark:text-slate-200">
+                  <li className="flex items-start gap-3">
+                    <Monitor className="h-5 w-5 text-blue-600 mt-0.5 flex-shrink-0" />
+                    <span>Activate on up to <strong>3 devices</strong></span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <Settings className="h-5 w-5 text-blue-600 mt-0.5 flex-shrink-0" />
+                    <span>Deactivate and transfer your license anytime</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <Shield className="h-5 w-5 text-blue-600 mt-0.5 flex-shrink-0" />
+                    <span>Works offline after activation</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <Zap className="h-5 w-5 text-blue-600 mt-0.5 flex-shrink-0" />
+                    <span>Instant license key delivery via email</span>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
@@ -427,7 +565,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Perfect For Section */}
+      {/* ⑤ Perfect For — Target User Positioning */}
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white dark:bg-slate-900">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
@@ -435,47 +573,92 @@ export default function Home() {
               Perfect
               <span className="text-blue-600 dark:text-blue-400"> For</span>
             </h2>
+            <p className="text-lg text-slate-600 dark:text-slate-300 max-w-2xl mx-auto">
+              Built for professionals who demand uncompromising output quality.
+            </p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             <div className="bg-white dark:bg-slate-800 p-8 rounded-2xl border border-slate-200 dark:border-slate-700 shadow-sm hover:shadow-md transition-shadow">
-              <Users className="h-10 w-10 text-blue-600 mb-4" />
+              <Video className="h-10 w-10 text-blue-600 mb-4" />
               <h3 className="text-xl font-semibold text-slate-900 dark:text-white mb-3">
-                Content Creators
+                Video Editors
               </h3>
               <p className="text-slate-600 dark:text-slate-300">
-                Tutorials, demos, walkthroughs
+                4K source footage, multi-track audio, watermark-free output
               </p>
             </div>
 
             <div className="bg-white dark:bg-slate-800 p-8 rounded-2xl border border-slate-200 dark:border-slate-700 shadow-sm hover:shadow-md transition-shadow">
               <Zap className="h-10 w-10 text-green-600 mb-4" />
               <h3 className="text-xl font-semibold text-slate-900 dark:text-white mb-3">
-                Developers
+                Motion Designers
               </h3>
               <p className="text-slate-600 dark:text-slate-300">
-                Bug reports, code reviews, presentations
+                120 FPS capture, cinematic Smart Camera, alpha channel export
               </p>
             </div>
 
             <div className="bg-white dark:bg-slate-800 p-8 rounded-2xl border border-slate-200 dark:border-slate-700 shadow-sm hover:shadow-md transition-shadow">
-              <Monitor className="h-10 w-10 text-purple-600 mb-4" />
+              <Users className="h-10 w-10 text-purple-600 mb-4" />
               <h3 className="text-xl font-semibold text-slate-900 dark:text-white mb-3">
-                Educators
+                Content Creators
               </h3>
               <p className="text-slate-600 dark:text-slate-300">
-                Online courses, training videos
+                Tutorials, demos, courses — clean exports ready for publishing
               </p>
             </div>
 
             <div className="bg-white dark:bg-slate-800 p-8 rounded-2xl border border-slate-200 dark:border-slate-700 shadow-sm hover:shadow-md transition-shadow">
-              <Video className="h-10 w-10 text-orange-600 mb-4" />
+              <Camera className="h-10 w-10 text-orange-600 mb-4" />
               <h3 className="text-xl font-semibold text-slate-900 dark:text-white mb-3">
-                Remote Workers
+                Professional Photographers
               </h3>
               <p className="text-slate-600 dark:text-slate-300">
-                Async messages, screen shares
+                Original resolution capture for retouching workflows and client reviews
               </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ⑥ Payment Trust Signals */}
+      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-white to-slate-50 dark:from-slate-900 dark:to-slate-950">
+        <div className="max-w-4xl mx-auto">
+          <div className="bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-blue-950/30 dark:to-indigo-950/30 p-10 rounded-3xl border border-blue-200/60 dark:border-blue-800/40">
+            <div className="text-center mb-8">
+              <h2 className="text-3xl font-bold text-slate-900 dark:text-white mb-2">
+                Buy with Confidence
+              </h2>
+            </div>
+            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 text-center">
+              <div className="flex flex-col items-center gap-2">
+                <CheckCircle className="h-8 w-8 text-green-500" />
+                <span className="font-semibold text-slate-900 dark:text-white">One-time payment</span>
+              </div>
+              <div className="flex flex-col items-center gap-2">
+                <Zap className="h-8 w-8 text-blue-500" />
+                <span className="font-semibold text-slate-900 dark:text-white">Instant license delivery</span>
+              </div>
+              <div className="flex flex-col items-center gap-2">
+                <Shield className="h-8 w-8 text-indigo-500" />
+                <span className="font-semibold text-slate-900 dark:text-white">Secure checkout</span>
+              </div>
+              <div className="flex flex-col items-center gap-2">
+                <CheckCircle className="h-8 w-8 text-green-500" />
+                <span className="font-semibold text-slate-900 dark:text-white">No recurring fees</span>
+              </div>
+            </div>
+            <div className="mt-8 text-center">
+              <a
+                href="https://www.creem.io/payment/prod_bi184SegyiXtwO6P2Kep1"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-500 hover:to-indigo-500 text-white px-10 py-4 rounded-full font-semibold transition-all inline-flex items-center gap-2 shadow-lg shadow-blue-500/20 text-lg"
+              >
+                Buy Pro License
+                <ArrowRight className="h-5 w-5" />
+              </a>
             </div>
           </div>
         </div>
@@ -879,8 +1062,7 @@ export default function Home() {
               <span className="text-xl font-bold">LensFlowPro</span>
             </div>
             <p className="text-slate-400 mb-6">
-              Professional Mac screen recording for creators, educators, and
-              developers.
+              Professional output upgrade for video editors, motion designers, and creators.
             </p>
             <div className="mt-4 flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-sm text-slate-400">
               <Link
