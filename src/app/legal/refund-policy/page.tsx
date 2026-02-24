@@ -54,10 +54,10 @@ export default function RefundPolicy() {
 
           <section className="bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-700 p-8 mb-8 shadow-sm">
             <h2 className="text-2xl font-bold text-slate-900 dark:text-white mb-4">
-              Refunds for In-App Purchases
+              Refund Policy
             </h2>
             <p className="text-slate-700 dark:text-slate-300 mb-4 text-lg">
-              Purchases are processed by Apple through In-App Purchase. Refund eligibility and processing are handled by Apple.
+              License purchases are processed by Creem. If you are unsatisfied with your purchase, you may request a refund within 14 days of the original purchase date.
             </p>
           </section>
 
@@ -66,10 +66,13 @@ export default function RefundPolicy() {
               How to Request a Refund
             </h2>
             <p className="text-slate-700 dark:text-slate-300 mb-4">
-              To request a refund, please use Apple's refund request process.
+              To request a refund, please contact us at <a href="mailto:chenjianyu944@gmail.com" className="text-blue-600 hover:underline">chenjianyu944@gmail.com</a> with your order details.
             </p>
             <p className="text-slate-700 dark:text-slate-300 text-sm">
-              You can view your purchase history and request a refund in your Apple ID purchase history.
+              Please include your Creem order number or the email address used during purchase so we can locate your transaction quickly.
+            </p>
+            <p className="text-slate-700 dark:text-slate-300 text-sm mt-3">
+              We will respond to your refund request within 7 business days.
             </p>
           </section>
 
@@ -78,7 +81,10 @@ export default function RefundPolicy() {
               Refund Processing
             </h2>
             <p className="text-slate-700 dark:text-slate-300 mb-4">
-              Apple determines refund eligibility and processes refunds to the payment method associated with your Apple ID.
+              Approved refunds are processed by Creem and returned to the original payment method. Processing typically takes 3–15 business days depending on your payment provider.
+            </p>
+            <p className="text-slate-700 dark:text-slate-300 mb-4">
+              Once a refund is approved, your license key will be revoked and the software will no longer be activated.
             </p>
           </section>
 

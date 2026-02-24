@@ -135,10 +135,13 @@ export default function TermsOfService() {
           <section className="bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-700 p-8 shadow-sm">
             <h2 className="text-2xl font-bold text-slate-900 dark:text-white mb-4">12. Payment & Billing</h2>
             <p className="text-slate-700 dark:text-slate-300 mb-4">
-              Purchases are processed by Apple through In-App Purchase.
+              License purchases are securely processed by Creem (<a href="https://www.creem.io" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">creem.io</a>). After purchase, you will receive a license key to activate LensFlowPro.
             </p>
             <p className="text-slate-700 dark:text-slate-300 mb-0">
-              You can manage your purchase history and billing settings in your Apple ID account.
+              For billing inquiries or to manage your purchase, please visit your Creem account or contact us at <a href="mailto:chenjianyu944@gmail.com" className="text-blue-600 hover:underline">chenjianyu944@gmail.com</a>.
+            </p>
+            <p className="text-slate-700 dark:text-slate-300 mb-0 mt-4">
+              For refund eligibility and process details, please refer to our <a href="/legal/refund-policy" className="text-blue-600 hover:underline">Refund Policy</a>.
             </p>
           </section>
         </div>

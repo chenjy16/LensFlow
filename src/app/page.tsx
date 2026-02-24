@@ -198,19 +198,28 @@ export default function Home() {
 
               <div className="flex flex-col sm:flex-row items-center lg:items-start gap-4 justify-center lg:justify-start mb-10">
                 <a
-                  href="https://apps.apple.com/us/app/lensflowpro/id6757075353?mt=12"
+                  href="https://www.creem.io/payment/prod_bi184SegyiXtwO6P2Kep1"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-500 hover:to-indigo-500 text-white px-9 py-3.5 rounded-full font-semibold transition-all inline-flex items-center gap-2 shadow-lg shadow-blue-500/20"
                 >
-                  Get LensFlowPro
+                  Buy License
                   <ArrowRight className="h-5 w-5" />
+                </a>
+                <a
+                  href="https://dl.lensflowpro.qzz.io/LensFlowPro-3.4.1.dmg"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-slate-700 dark:text-slate-200 px-6 py-3 rounded-full border border-slate-200 dark:border-white/15 hover:bg-white/70 dark:hover:bg-white/10 transition-colors font-medium inline-flex items-center gap-2"
+                >
+                  Download DMG
+                  <ArrowRight className="h-4 w-4" />
                 </a>
                 <Link
                   href="/legal/release-notes"
-                  className="text-slate-700 dark:text-slate-200 px-6 py-3 rounded-full border border-slate-200 dark:border-white/15 hover:bg-white/70 dark:hover:bg-white/10 transition-colors font-medium"
+                  className="text-slate-500 dark:text-slate-400 px-4 py-2 text-sm hover:text-blue-600 dark:hover:text-blue-400 transition-colors font-medium"
                 >
-                  View Release Notes
+                  Release Notes
                 </Link>
               </div>
 
@@ -364,7 +373,7 @@ export default function Home() {
               </div>
               <div className="flex items-start gap-2">
                 <User className="h-5 w-5 text-blue-600 mt-0.5 flex-shrink-0" />
-                <span><strong>Presenter Overlay:</strong> macOS 14+; PiP on earlier versions.</span>
+                <span><strong>Presenter Overlay:</strong> Native support on macOS 14.2+.</span>
               </div>
             </div>
           </div>
@@ -592,7 +601,7 @@ export default function Home() {
                 <li>• Uses Apple&apos;s native screen recording APIs</li>
                 <li>• Complies with macOS security permissions</li>
                 <li>• Respects user privacy settings and controls</li>
-                <li>• Follows App Store sandboxing requirements</li>
+                <li>• Hardened Runtime with Developer ID signing</li>
               </ul>
             </div>
           </div>
@@ -628,11 +637,11 @@ export default function Home() {
                 </li>
                 <li className="flex justify-between">
                   <span>Version:</span>
-                  <span className="font-medium">macOS 12.3+ (Monterey)</span>
+                  <span className="font-medium">macOS 14.2+ (Sonoma)</span>
                 </li>
                 <li className="flex justify-between">
                   <span>Architecture:</span>
-                  <span className="font-medium">Intel or Apple Silicon</span>
+                  <span className="font-medium">Apple Silicon (arm64)</span>
                 </li>
                 <li className="flex justify-between">
                   <span>Memory:</span>
@@ -653,32 +662,18 @@ export default function Home() {
                 <li className="flex items-center space-x-2">
                   <CheckCircle className="h-4 w-4 text-green-500" />
                   <span>
-                    <strong>macOS 12.3+:</strong> Basic screen recording &amp;
-                    audio
+                    <strong>macOS 14.2+:</strong> Full feature set including Presenter Overlay
                   </span>
                 </li>
                 <li className="flex items-center space-x-2">
                   <CheckCircle className="h-4 w-4 text-green-500" />
                   <span>
-                    <strong>macOS 13.0+:</strong> Enhanced performance modes
-                  </span>
-                </li>
-                <li className="flex items-center space-x-2">
-                  <CheckCircle className="h-4 w-4 text-green-500" />
-                  <span>
-                    <strong>macOS 14.0+:</strong> Presenter Overlay feature
-                  </span>
-                </li>
-                <li className="flex items-center space-x-2">
-                  <CheckCircle className="h-4 w-4 text-green-500" />
-                  <span>
-                    <strong>macOS 15.0+:</strong> Latest optimizations
+                    <strong>macOS 15.0+:</strong> HDR recording &amp; latest optimizations
                   </span>
                 </li>
               </ul>
               <p className="mt-4 text-xs text-slate-500 dark:text-slate-400">
-                Latest macOS version recommended for optimal performance and
-                features
+                Requires macOS 14.2 (Sonoma) or later. Latest macOS recommended for optimal performance.
               </p>
             </div>
           </div>
@@ -776,7 +771,7 @@ export default function Home() {
           <div className="bg-white dark:bg-slate-900 p-8 rounded-2xl">
             <h3 className="text-xl font-semibold text-slate-900 dark:text-white mb-4 flex items-center">
               <Settings className="h-6 w-6 text-blue-500 mr-2" />
-              App Store Compliance
+              Security &amp; Distribution
             </h3>
             <div className="space-y-4 text-slate-600 dark:text-slate-300">
               <div>
@@ -801,12 +796,12 @@ export default function Home() {
 
               <div>
                 <h4 className="font-medium text-slate-900 dark:text-white mb-2">
-                  Technical Standards
+                  Distribution &amp; Code Signing
                 </h4>
                 <ul className="text-sm space-y-1">
-                  <li>• Apple Human Interface Guidelines</li>
-                  <li>• App Store compliant APIs</li>
-                  <li>• Privacy manifests included</li>
+                  <li>• Signed with Apple Developer ID certificate</li>
+                  <li>• Notarized by Apple for Gatekeeper verification</li>
+                  <li>• Hardened Runtime enabled</li>
                   <li>• No background performance impact</li>
                 </ul>
               </div>
@@ -922,10 +917,10 @@ export default function Home() {
               </a>
             </div>
             <p className="text-slate-500 text-xs mt-6 max-w-2xl mx-auto">
-              Purchases are processed by Apple through In-App Purchase.
+              License purchases are securely processed by Creem. Download the DMG and activate with your license key.
             </p>
             <p className="text-slate-500 text-sm mt-4">
-              &copy; 2025 LensFlowPro. All rights reserved.
+              &copy; 2026 LensFlowPro. All rights reserved.
             </p>
           </div>
         </div>

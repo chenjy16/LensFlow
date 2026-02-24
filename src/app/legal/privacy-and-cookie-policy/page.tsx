@@ -54,7 +54,7 @@ export default function PrivacyPolicy() {
 
                <div>
                 <h3 className="text-xl font-semibold text-slate-900 dark:text-white mb-3">Payment Processor</h3>
-                <p className="text-sm mb-2">Purchases are processed by Apple through In-App Purchase. We do not receive or store full payment card information.</p>
+                <p className="text-sm mb-2">License purchases are securely processed by Creem (<a href="https://www.creem.io" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">creem.io</a>). We do not receive or store full payment card information. Creem handles all payment processing and may collect billing details as described in their privacy policy.</p>
               </div>
 
               <div>
