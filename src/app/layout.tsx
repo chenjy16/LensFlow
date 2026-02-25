@@ -16,7 +16,11 @@ export const metadata: Metadata = {
   title: "LensFlowPro - Professional Mac Screen Recording",
   description: "Professional output upgrade for video editors, motion designers, and creators. Export in 4K, 60/120 FPS, watermark-free. One-time payment, lifetime access.",
   icons: {
-    icon: "/icon1.png",
+    icon: [
+      { url: "/favicon.png", sizes: "32x32" },
+      { url: "/icon1.png", sizes: "1024x1024" },
+    ],
+    apple: { url: "/icon1.png", sizes: "1024x1024" },
   },
 };
 
