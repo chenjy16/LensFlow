@@ -15,6 +15,9 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "LensFlowPro - Professional Mac Screen Recording",
   description: "Professional output upgrade for video editors, motion designers, and creators. Export in 4K, 60/120 FPS, watermark-free. One-time payment, lifetime access.",
+  icons: {
+    icon: "/icon1.png",
+  },
 };
 
 export default function RootLayout({
